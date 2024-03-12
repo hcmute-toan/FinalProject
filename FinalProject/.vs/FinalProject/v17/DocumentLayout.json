@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Windows Programming\\test\\FinalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|d:\\windows programming\\test\\finalproject\\finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\test\\FinalProject\\finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Form1.cs",
+              "ToolTip": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs",
+              "RelativeToolTip": "FinalProject\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T14:09:38.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Form1.cs",
+              "ToolTip": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs [Design]",
+              "RelativeToolTip": "FinalProject\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:16:30.783Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
