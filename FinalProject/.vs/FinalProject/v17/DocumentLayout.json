@@ -1,14 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Windows Programming\\test\\FinalProject\\",
+  "WorkspaceRootPath": "D:\\Windows Programming\\FinalProject\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|d:\\windows programming\\test\\finalproject\\finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\test\\FinalProject\\finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\ucinformationcompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\ucinformationcompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|d:\\windows programming\\finalproject\\finalproject\\finalproject\\findjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\findjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\findjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\findjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +54,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Form1.cs",
-              "ToolTip": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs",
-              "RelativeToolTip": "FinalProject\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "FindJob.cs",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\FindJob.cs",
+              "RelativeDocumentMoniker": "FinalProject\\FindJob.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\FindJob.cs",
+              "RelativeToolTip": "FinalProject\\FindJob.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAlwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T14:09:38.465Z",
+              "WhenOpened": "2024-03-17T07:46:10.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UCInformationCompanies.cs [Design]",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\UCInformationCompanies.cs",
+              "RelativeDocumentMoniker": "FinalProject\\UCInformationCompanies.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\UCInformationCompanies.cs [Design]",
+              "RelativeToolTip": "FinalProject\\UCInformationCompanies.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:31:51.064Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Program.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Program.cs",
+              "RelativeToolTip": "FinalProject\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:26:05.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FindJob.cs [Design]",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\FindJob.cs",
+              "RelativeDocumentMoniker": "FinalProject\\FindJob.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\FindJob.cs [Design]",
+              "RelativeToolTip": "FinalProject\\FindJob.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T06:56:06.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\SignUp.cs",
+              "RelativeDocumentMoniker": "FinalProject\\SignUp.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\SignUp.cs",
+              "RelativeToolTip": "FinalProject\\SignUp.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAlwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T05:04:29.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\SignUp.cs",
+              "RelativeDocumentMoniker": "FinalProject\\SignUp.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\SignUp.cs [Design]",
+              "RelativeToolTip": "FinalProject\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:19:04.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Login.Designer.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Login.Designer.cs",
+              "RelativeToolTip": "FinalProject\\Login.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T15:11:12.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs",
-              "RelativeDocumentMoniker": "FinalProject\\Form1.cs",
-              "ToolTip": "D:\\Windows Programming\\test\\FinalProject\\FinalProject\\Form1.cs [Design]",
-              "RelativeToolTip": "FinalProject\\Form1.cs [Design]",
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Login.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Login.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Login.cs",
+              "RelativeToolTip": "FinalProject\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T13:16:30.783Z",
+              "WhenOpened": "2024-03-15T14:28:03.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Login.cs",
+              "RelativeDocumentMoniker": "FinalProject\\Login.cs",
+              "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\Login.cs [Design]",
+              "RelativeToolTip": "FinalProject\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:14:52.57Z",
               "EditorCaption": " [Design]"
             }
           ]
