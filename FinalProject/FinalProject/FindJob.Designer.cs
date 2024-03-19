@@ -33,14 +33,20 @@
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flowLayoutjobs = new System.Windows.Forms.FlowLayoutPanel();
             this.CreateCV = new System.Windows.Forms.TabPage();
-            this.Tools = new System.Windows.Forms.TabPage();
-            this.Blogs = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Tools = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Blogs = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.CreateCV.SuspendLayout();
+            this.Tools.SuspendLayout();
+            this.Blogs.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -101,7 +107,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.flowLayoutPanel1);
+            this.tabPage1.Controls.Add(this.flowLayoutjobs);
             this.tabPage1.Location = new System.Drawing.Point(184, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -110,8 +116,18 @@
             this.tabPage1.Text = "Jobs";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutjobs
+            // 
+            this.flowLayoutjobs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutjobs.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutjobs.Name = "flowLayoutjobs";
+            this.flowLayoutjobs.Size = new System.Drawing.Size(954, 572);
+            this.flowLayoutjobs.TabIndex = 0;
+            this.flowLayoutjobs.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutjobs_Paint);
+            // 
             // CreateCV
             // 
+            this.CreateCV.Controls.Add(this.flowLayoutPanel1);
             this.CreateCV.Location = new System.Drawing.Point(184, 4);
             this.CreateCV.Name = "CreateCV";
             this.CreateCV.Padding = new System.Windows.Forms.Padding(3);
@@ -120,8 +136,17 @@
             this.CreateCV.Text = "Create CV";
             this.CreateCV.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(954, 572);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
             // Tools
             // 
+            this.Tools.Controls.Add(this.flowLayoutPanel2);
             this.Tools.Location = new System.Drawing.Point(184, 4);
             this.Tools.Name = "Tools";
             this.Tools.Padding = new System.Windows.Forms.Padding(3);
@@ -130,8 +155,17 @@
             this.Tools.Text = "Tools";
             this.Tools.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(954, 572);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
             // Blogs
             // 
+            this.Blogs.Controls.Add(this.flowLayoutPanel3);
             this.Blogs.Location = new System.Drawing.Point(184, 4);
             this.Blogs.Name = "Blogs";
             this.Blogs.Padding = new System.Windows.Forms.Padding(3);
@@ -139,13 +173,13 @@
             this.Blogs.TabIndex = 3;
             this.Blogs.Text = "Blogs";
             // 
-            // flowLayoutPanel1
+            // flowLayoutPanel3
             // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(954, 572);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(954, 572);
+            this.flowLayoutPanel3.TabIndex = 0;
             // 
             // FindJob
             // 
@@ -161,6 +195,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
             this.guna2TabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.CreateCV.ResumeLayout(false);
+            this.Tools.ResumeLayout(false);
+            this.Blogs.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -173,6 +210,9 @@
         private System.Windows.Forms.TabPage CreateCV;
         private System.Windows.Forms.TabPage Tools;
         private System.Windows.Forms.TabPage Blogs;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutjobs;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
     }
 }

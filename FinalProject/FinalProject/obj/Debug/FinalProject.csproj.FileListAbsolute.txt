@@ -25,3 +25,4 @@ D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalPro
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.SignUp.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.FindJob.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.UCInformationCompanies.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.CheckCVs.resources

@@ -53,12 +53,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckCVs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCVs.Designer.cs">
+      <DependentUpon>CheckCVs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CV.cs" />
+    <Compile Include="CVDAO.cs" />
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Jobs.cs" />
     <Compile Include="FindJob.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FindJob.Designer.cs">
       <DependentUpon>FindJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="JobsDAO.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +78,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadSQL.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +91,9 @@
     <Compile Include="UCInformationCompanies.Designer.cs">
       <DependentUpon>UCInformationCompanies.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CheckCVs.resx">
+      <DependentUpon>CheckCVs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FindJob.resx">
       <DependentUpon>FindJob.cs</DependentUpon>
     </EmbeddedResource>

@@ -95,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(315, 87);
+            this.label4.Location = new System.Drawing.Point(328, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 16);
             this.label4.TabIndex = 7;
@@ -104,7 +104,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(538, 87);
+            this.label5.Location = new System.Drawing.Point(556, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(136, 16);
             this.label5.TabIndex = 8;
@@ -113,11 +113,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(754, 87);
+            this.label6.Location = new System.Drawing.Point(771, 87);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 16);
             this.label6.TabIndex = 9;
             this.label6.Text = "Đăng 25 giây trước";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // UCInformationCompanies
             // 
@@ -132,7 +133,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Name = "UCInformationCompanies";
-            this.Size = new System.Drawing.Size(900, 120);
+            this.Size = new System.Drawing.Size(940, 120);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.ResumeLayout(false);
