@@ -59,15 +59,39 @@
     <Compile Include="CheckCVs.Designer.cs">
       <DependentUpon>CheckCVs.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCV.Designer.cs">
+      <DependentUpon>CreateCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateJobs.Designer.cs">
+      <DependentUpon>CreateJobs.cs</DependentUpon>
+    </Compile>
     <Compile Include="CV.cs" />
     <Compile Include="CVDAO.cs" />
     <Compile Include="DBConnection.cs" />
+    <Compile Include="DescribeJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DescribeJob.Designer.cs">
+      <DependentUpon>DescribeJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jobs.cs" />
     <Compile Include="FindJob.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FindJob.Designer.cs">
       <DependentUpon>FindJob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobsApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobsApplication.Designer.cs">
+      <DependentUpon>JobsApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="JobsDAO.cs" />
     <Compile Include="Login.cs">
@@ -91,11 +115,24 @@
     <Compile Include="UCInformationCompanies.Designer.cs">
       <DependentUpon>UCInformationCompanies.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAccount.cs" />
     <EmbeddedResource Include="CheckCVs.resx">
       <DependentUpon>CheckCVs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateCV.resx">
+      <DependentUpon>CreateCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateJobs.resx">
+      <DependentUpon>CreateJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DescribeJob.resx">
+      <DependentUpon>DescribeJob.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FindJob.resx">
       <DependentUpon>FindJob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobsApplication.resx">
+      <DependentUpon>JobsApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

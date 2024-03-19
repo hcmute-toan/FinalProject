@@ -8,20 +8,22 @@ namespace FinalProject
 {
     public class Jobs
     {
-        private string id;
-        private string companyId;
+        private int id;
+        private int companyId;
         private string positionNeeded;
         private string companyName;
         private string salary;
         private string nameJob;
         private string address;
         private string postingTime;
+        private string contact;
         private string numberOfRecruit;
         //mo ta cong viec, mo ta cong ty, mo ta dai ngo, ....de sau lam
         public Jobs() 
         { }
-        public string Id { get { return id; } set { id = value; } }
-        public string CompanyId { get { return companyId; } set { companyId = value; } }
+        public string Contact { get { return contact; } set { contact = value; } }
+        public int Id { get { return id; } set { id = value; } }
+        public int CompanyId { get { return companyId; } set { companyId = value; } }
         public string NameJob { get { return nameJob; } set { nameJob = value; } }
         public string PositionNeeded { get { return positionNeeded; } set { positionNeeded = value; } }
         public string CompanyName { get { return companyName; } set { companyName = value; } }

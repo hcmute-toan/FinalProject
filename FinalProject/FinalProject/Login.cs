@@ -15,6 +15,7 @@ namespace FinalProject
         public Login()
         {
             InitializeComponent();
+            ptbEye.Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -31,7 +32,7 @@ namespace FinalProject
         {
             try
             {
-                tbUserName.ForeColor = Color.Green;
+                tbUserName.ForeColor = Color.Blue;
                 panelInvalid1.Visible = false;
 
             }
@@ -42,7 +43,7 @@ namespace FinalProject
         {
             try
             {
-                tbPassword.ForeColor = Color.Green;
+                tbPassword.ForeColor = Color.Blue;
                 panelInvalid2.Visible = false;
 
             }
@@ -71,15 +72,24 @@ namespace FinalProject
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if(tbUserName.PlaceholderText== "Enter Your Name"|| tbUserName.Text.Length==0)
+            if( tbUserName.Text.Length==0)
             {
                 panelInvalid1.Visible = true;
                 return;
             }
-            if (tbPassword.PlaceholderText == "Enter Password"||tbPassword.Text.Length==0)
+            if (tbPassword.Text.Length==0)
             {
                 panelInvalid2.Visible = true;
                 return;
+            }
+            foreach(UserAccount account in ReadSQL.Accounts())
+            {
+                if(panel1.Visible==true && tbUserName.Text==account.UserName &&  tbPassword.Text==account.Password)
+                {
+                    this.Hide();
+                    FindJob form1 = new FindJob();
+                    form1.ShowDialog();
+                }
             }
         }
 
@@ -99,6 +109,26 @@ namespace FinalProject
             panel2.Visible = true;
             panel1.Visible = false;           
         }
+
+        private void guna2CirclePictureBox5_Click(object sender, EventArgs e)
+        {
+            this.MinimizeBox = true;
+        }
+
+        private void ptbHidden_Click(object sender, EventArgs e)
+        {
+            tbPassword.PasswordChar = '*';
+            ptbHidden.Visible = false;
+            ptbEye.Visible = true;
+        }
+
+        private void ptbEye_Click_1(object sender, EventArgs e)
+        {
+            tbPassword.PasswordChar = '\0';
+            ptbHidden.Visible = true;
+            ptbEye.Visible = false;
+        }
+
 
         //private void guna2CirclePictureBox4_MouseHover(object sender, EventArgs e)
         //{

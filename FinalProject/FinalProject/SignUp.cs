@@ -36,5 +36,15 @@ namespace FinalProject
         {
 
         }
+
+        private void ptbEye_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ptbHidden_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -26,3 +26,7 @@ D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalPro
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.FindJob.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.UCInformationCompanies.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.CheckCVs.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.CreateCV.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.CreateJobs.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.DescribeJob.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.JobsApplication.resources

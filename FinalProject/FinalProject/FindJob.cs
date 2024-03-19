@@ -16,9 +16,26 @@ namespace FinalProject
         public FindJob()
         {
             InitializeComponent();
-            UCInformationCompanies uCInformationCompanies = new UCInformationCompanies();
-            this.Controls.Add(uCInformationCompanies);
-            flowLayoutjobs.Controls.Add(uCInformationCompanies);
+    
+            foreach (Jobs job in ReadSQL.Jobs())
+            {
+                
+                UCInformationCompanies UC= new UCInformationCompanies();
+                UC.lbAddress.Text = job.Address;
+                UC.lbNameCompany.Text = job.CompanyName;
+                UC.lbNameJob.Text = job.NameJob;
+                UC.lbNeedPosition.Text = job.PositionNeeded;
+                UC.lbRecruit.Text = job.NumberOfRecruit;
+                UC.lbContact.Text = job.Contact;
+                UC.lbTime.Text = job.PostingTime;
+                UC.lbSalary.Text = job.Salary;
+                this.Controls.Add(UC);
+               
+                flowLayoutjobs.Controls.Add(UC);
+            }
+            
+            //this.Controls.Add(uCInformationCompanies);
+            //flowLayoutjobs.Controls.Add(uCInformationCompanies);
 
 
 
@@ -34,6 +51,21 @@ namespace FinalProject
         private void flowLayoutjobs_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
