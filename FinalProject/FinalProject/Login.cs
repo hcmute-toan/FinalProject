@@ -17,7 +17,7 @@ namespace FinalProject
         public Login()
         {
             InitializeComponent();
-            ptbEye.Visible = false;
+            ptbEye.Visible = true;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -142,6 +142,13 @@ namespace FinalProject
             tbPassword.PasswordChar = '\0';
             ptbHidden.Visible = true;
             ptbEye.Visible = false;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUp signUp = new SignUp();
+            signUp.ShowDialog();
         }
 
 

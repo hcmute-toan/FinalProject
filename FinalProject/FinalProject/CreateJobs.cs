@@ -26,7 +26,7 @@ namespace FinalProject
         {
             Jobs job = new Jobs();
 
-            string SQL = string.Format("INSERT INTO Jobs (NameJob,PositionNeeded,CompanyName,Salary,Address,PostingTime,NumberOfRecruit,CompanyId,Contact) VALUES ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", job.NameJob, job.PositionNeeded, job.CompanyName, job.Salary, job.Address, job.PostingTime, job.NumberOfRecruit, Login.IdCompany, job.Contact);
+            string SQL = string.Format("INSERT INTO Jobs (CompanyId,NameJob,PositionNeeded,CompanyName,Salary,Address,PostingTime,NumberOfRecruit,Contact) VALUES ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Login.IdCompany, job.NameJob, job.PositionNeeded, job.CompanyName, job.Salary, job.Address, job.PostingTime, job.NumberOfRecruit,  job.Contact);
             try
             {
                 // Ket noi

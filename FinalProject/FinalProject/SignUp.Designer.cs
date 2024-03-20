@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ptbHidden = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ptbEye = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbConvertLogIn = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox7 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -72,10 +75,11 @@
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ptbHidden = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ptbEye = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).BeginInit();
             this.guna2Panel10.SuspendLayout();
@@ -94,8 +98,6 @@
             this.panelInvalid1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox1
@@ -122,7 +124,7 @@
             this.guna2Panel3.Controls.Add(this.panel1);
             this.guna2Panel3.Controls.Add(this.label11);
             this.guna2Panel3.Controls.Add(this.label12);
-            this.guna2Panel3.Controls.Add(this.label10);
+            this.guna2Panel3.Controls.Add(this.lbConvertLogIn);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox7);
             this.guna2Panel3.Controls.Add(this.btnLogin);
@@ -144,6 +146,32 @@
             this.guna2Panel3.Size = new System.Drawing.Size(770, 568);
             this.guna2Panel3.TabIndex = 2;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
+            // 
+            // ptbHidden
+            // 
+            this.ptbHidden.Image = ((System.Drawing.Image)(resources.GetObject("ptbHidden.Image")));
+            this.ptbHidden.ImageRotate = 0F;
+            this.ptbHidden.Location = new System.Drawing.Point(710, 293);
+            this.ptbHidden.Name = "ptbHidden";
+            this.ptbHidden.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ptbHidden.Size = new System.Drawing.Size(35, 34);
+            this.ptbHidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbHidden.TabIndex = 20;
+            this.ptbHidden.TabStop = false;
+            this.ptbHidden.Click += new System.EventHandler(this.ptbHidden_Click);
+            // 
+            // ptbEye
+            // 
+            this.ptbEye.Image = ((System.Drawing.Image)(resources.GetObject("ptbEye.Image")));
+            this.ptbEye.ImageRotate = 0F;
+            this.ptbEye.Location = new System.Drawing.Point(710, 293);
+            this.ptbEye.Name = "ptbEye";
+            this.ptbEye.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ptbEye.Size = new System.Drawing.Size(35, 34);
+            this.ptbEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbEye.TabIndex = 19;
+            this.ptbEye.TabStop = false;
+            this.ptbEye.Click += new System.EventHandler(this.ptbEye_Click);
             // 
             // panel2
             // 
@@ -186,16 +214,17 @@
             this.label12.Text = "Candidates";
             this.label12.UseWaitCursor = true;
             // 
-            // label10
+            // lbConvertLogIn
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
-            this.label10.Location = new System.Drawing.Point(322, 477);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 16);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "Already have a account";
+            this.lbConvertLogIn.AutoSize = true;
+            this.lbConvertLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConvertLogIn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.lbConvertLogIn.Location = new System.Drawing.Point(322, 477);
+            this.lbConvertLogIn.Name = "lbConvertLogIn";
+            this.lbConvertLogIn.Size = new System.Drawing.Size(148, 16);
+            this.lbConvertLogIn.TabIndex = 23;
+            this.lbConvertLogIn.Text = "Already have a account";
+            this.lbConvertLogIn.Click += new System.EventHandler(this.lbConvertLogIn_Click);
             // 
             // guna2CirclePictureBox7
             // 
@@ -627,32 +656,6 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
-            // ptbHidden
-            // 
-            this.ptbHidden.Image = ((System.Drawing.Image)(resources.GetObject("ptbHidden.Image")));
-            this.ptbHidden.ImageRotate = 0F;
-            this.ptbHidden.Location = new System.Drawing.Point(710, 293);
-            this.ptbHidden.Name = "ptbHidden";
-            this.ptbHidden.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptbHidden.Size = new System.Drawing.Size(35, 34);
-            this.ptbHidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbHidden.TabIndex = 20;
-            this.ptbHidden.TabStop = false;
-            this.ptbHidden.Click += new System.EventHandler(this.ptbHidden_Click);
-            // 
-            // ptbEye
-            // 
-            this.ptbEye.Image = ((System.Drawing.Image)(resources.GetObject("ptbEye.Image")));
-            this.ptbEye.ImageRotate = 0F;
-            this.ptbEye.Location = new System.Drawing.Point(710, 293);
-            this.ptbEye.Name = "ptbEye";
-            this.ptbEye.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptbEye.Size = new System.Drawing.Size(35, 34);
-            this.ptbEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbEye.TabIndex = 19;
-            this.ptbEye.TabStop = false;
-            this.ptbEye.Click += new System.EventHandler(this.ptbEye_Click);
-            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -662,11 +665,14 @@
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox4)).EndInit();
             this.guna2Panel10.ResumeLayout(false);
@@ -693,8 +699,6 @@
             this.panelInvalid1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -737,7 +741,7 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox3;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox7;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbConvertLogIn;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
@@ -745,5 +749,6 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptbHidden;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptbEye;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

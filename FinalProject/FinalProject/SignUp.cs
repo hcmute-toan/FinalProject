@@ -46,5 +46,12 @@ namespace FinalProject
         {
 
         }
+
+        private void lbConvertLogIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+        }
     }
 }

@@ -28,9 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.ptbHidden = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ptbEye = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -56,10 +59,11 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ptbEye = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ptbHidden = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
@@ -69,8 +73,6 @@
             this.panelInvalid1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CirclePictureBox3
@@ -90,7 +92,6 @@
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel3.BackgroundImage")));
             this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Panel3.Controls.Add(this.ptbHidden);
             this.guna2Panel3.Controls.Add(this.ptbEye);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox3);
             this.guna2Panel3.Controls.Add(this.label9);
@@ -107,10 +108,37 @@
             this.guna2Panel3.Controls.Add(this.label2);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Controls.Add(this.label1);
+            this.guna2Panel3.Controls.Add(this.ptbHidden);
             this.guna2Panel3.Location = new System.Drawing.Point(210, 32);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(740, 568);
             this.guna2Panel3.TabIndex = 2;
+            // 
+            // ptbHidden
+            // 
+            this.ptbHidden.Image = ((System.Drawing.Image)(resources.GetObject("ptbHidden.Image")));
+            this.ptbHidden.ImageRotate = 0F;
+            this.ptbHidden.Location = new System.Drawing.Point(650, 287);
+            this.ptbHidden.Name = "ptbHidden";
+            this.ptbHidden.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ptbHidden.Size = new System.Drawing.Size(35, 34);
+            this.ptbHidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbHidden.TabIndex = 18;
+            this.ptbHidden.TabStop = false;
+            this.ptbHidden.Click += new System.EventHandler(this.ptbHidden_Click);
+            // 
+            // ptbEye
+            // 
+            this.ptbEye.Image = ((System.Drawing.Image)(resources.GetObject("ptbEye.Image")));
+            this.ptbEye.ImageRotate = 0F;
+            this.ptbEye.Location = new System.Drawing.Point(650, 292);
+            this.ptbEye.Name = "ptbEye";
+            this.ptbEye.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ptbEye.Size = new System.Drawing.Size(35, 34);
+            this.ptbEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbEye.TabIndex = 17;
+            this.ptbEye.TabStop = false;
+            this.ptbEye.Click += new System.EventHandler(this.ptbEye_Click_1);
             // 
             // label9
             // 
@@ -122,6 +150,7 @@
             this.label9.Size = new System.Drawing.Size(124, 16);
             this.label9.TabIndex = 16;
             this.label9.Text = "Create new account";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -281,7 +310,7 @@
             this.tbPassword.Location = new System.Drawing.Point(12, 4);
             this.tbPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.PasswordChar = '\0';
+            this.tbPassword.PasswordChar = '*';
             this.tbPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.tbPassword.PlaceholderText = "Enter Password";
             this.tbPassword.SelectedText = "";
@@ -411,32 +440,6 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // ptbEye
-            // 
-            this.ptbEye.Image = ((System.Drawing.Image)(resources.GetObject("ptbEye.Image")));
-            this.ptbEye.ImageRotate = 0F;
-            this.ptbEye.Location = new System.Drawing.Point(637, 289);
-            this.ptbEye.Name = "ptbEye";
-            this.ptbEye.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptbEye.Size = new System.Drawing.Size(35, 34);
-            this.ptbEye.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbEye.TabIndex = 17;
-            this.ptbEye.TabStop = false;
-            this.ptbEye.Click += new System.EventHandler(this.ptbEye_Click_1);
-            // 
-            // ptbHidden
-            // 
-            this.ptbHidden.Image = ((System.Drawing.Image)(resources.GetObject("ptbHidden.Image")));
-            this.ptbHidden.ImageRotate = 0F;
-            this.ptbHidden.Location = new System.Drawing.Point(637, 287);
-            this.ptbHidden.Name = "ptbHidden";
-            this.ptbHidden.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptbHidden.Size = new System.Drawing.Size(35, 34);
-            this.ptbHidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbHidden.TabIndex = 18;
-            this.ptbHidden.TabStop = false;
-            this.ptbHidden.Click += new System.EventHandler(this.ptbHidden_Click);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -452,6 +455,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
@@ -465,8 +470,6 @@
             this.panelInvalid1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -501,5 +504,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptbEye;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptbHidden;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
     }
 }

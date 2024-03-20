@@ -26,7 +26,7 @@ namespace FinalProject
                 {
                     Jobs job = new Jobs();
                     job.Id = (int)reader["Id"];
-                   // job.CompanyId = (int)reader["CompanyId"];
+                    //job.CompanyId = (int)reader["CompanyId"];
                     job.NameJob = (string)reader["NameJob"];
                     job.PositionNeeded = (string)reader["PositionNeeded"];
                     job.CompanyName = (string)reader["CompanyName"];

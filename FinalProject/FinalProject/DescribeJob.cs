@@ -39,5 +39,17 @@ namespace FinalProject
         {
 
         }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreateCV cv = new CreateCV();
+            cv.ShowDialog();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

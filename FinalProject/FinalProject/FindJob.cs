@@ -37,8 +37,6 @@ namespace FinalProject
                 UC.Click += (sender, e) =>
                 {
                     uc = UC;
-                    //UC.OnClick();
-                    MessageBox.Show($"{job.NameJob}");
                     DescribeJob describeJob = new DescribeJob();
                     describeJob.ShowDialog();
                 };
