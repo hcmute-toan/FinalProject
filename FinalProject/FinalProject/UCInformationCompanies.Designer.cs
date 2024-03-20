@@ -1,4 +1,6 @@
-﻿namespace FinalProject
+﻿using System.Windows.Forms;
+
+namespace FinalProject
 {
     partial class UCInformationCompanies
     {
@@ -18,6 +20,13 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public void OnClick()
+        {
+            // Xử lý sự kiện click
+            MessageBox.Show("User Control đã được click!");
+
         }
 
         #region Component Designer generated code
@@ -111,7 +120,7 @@
             // 
             this.lbNeedPosition.AutoSize = true;
             this.lbNeedPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNeedPosition.Location = new System.Drawing.Point(401, 12);
+            this.lbNeedPosition.Location = new System.Drawing.Point(413, 9);
             this.lbNeedPosition.Name = "lbNeedPosition";
             this.lbNeedPosition.Size = new System.Drawing.Size(162, 18);
             this.lbNeedPosition.TabIndex = 7;
@@ -121,7 +130,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(676, 68);
+            this.label5.Location = new System.Drawing.Point(613, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 18);
             this.label5.TabIndex = 8;
@@ -131,7 +140,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(676, 108);
+            this.label6.Location = new System.Drawing.Point(645, 110);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 18);
             this.label6.TabIndex = 9;
@@ -142,7 +151,7 @@
             // 
             this.lbRecruit.AutoSize = true;
             this.lbRecruit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRecruit.Location = new System.Drawing.Point(824, 70);
+            this.lbRecruit.Location = new System.Drawing.Point(761, 68);
             this.lbRecruit.Name = "lbRecruit";
             this.lbRecruit.Size = new System.Drawing.Size(16, 18);
             this.lbRecruit.TabIndex = 10;
@@ -152,7 +161,7 @@
             // 
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.Location = new System.Drawing.Point(761, 110);
+            this.lbTime.Location = new System.Drawing.Point(716, 110);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(80, 18);
             this.lbTime.TabIndex = 11;
@@ -162,7 +171,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(806, 3);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(747, 11);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(40, 38);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -181,7 +190,7 @@
             // lbContact
             // 
             this.lbContact.AutoSize = true;
-            this.lbContact.Location = new System.Drawing.Point(401, 108);
+            this.lbContact.Location = new System.Drawing.Point(403, 108);
             this.lbContact.Name = "lbContact";
             this.lbContact.Size = new System.Drawing.Size(217, 16);
             this.lbContact.TabIndex = 14;
@@ -190,7 +199,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(321, 59);
+            this.label1.Location = new System.Drawing.Point(333, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 15;
@@ -200,7 +209,7 @@
             // lbSalary
             // 
             this.lbSalary.AutoSize = true;
-            this.lbSalary.Location = new System.Drawing.Point(401, 59);
+            this.lbSalary.Location = new System.Drawing.Point(413, 61);
             this.lbSalary.Name = "lbSalary";
             this.lbSalary.Size = new System.Drawing.Size(83, 16);
             this.lbSalary.TabIndex = 16;
@@ -229,7 +238,7 @@
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2Panel1.Location = new System.Drawing.Point(125, 52);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(196, 34);
+            this.guna2Panel1.Size = new System.Drawing.Size(193, 34);
             this.guna2Panel1.TabIndex = 19;
             // 
             // UCInformationCompanies
@@ -253,7 +262,7 @@
             this.Controls.Add(this.lbNameJob);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Name = "UCInformationCompanies";
-            this.Size = new System.Drawing.Size(849, 163);
+            this.Size = new System.Drawing.Size(811, 163);
             this.Load += new System.EventHandler(this.UCInformationCompanies_Load);
             this.Click += new System.EventHandler(this.UCInformationCompanies_Click);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();

@@ -26,7 +26,7 @@ namespace FinalProject
                 {
                     Jobs job = new Jobs();
                     job.Id = (int)reader["Id"];
-                    job.CompanyId = (int)reader["CompanyId"];
+                   // job.CompanyId = (int)reader["CompanyId"];
                     job.NameJob = (string)reader["NameJob"];
                     job.PositionNeeded = (string)reader["PositionNeeded"];
                     job.CompanyName = (string)reader["CompanyName"];
@@ -34,8 +34,8 @@ namespace FinalProject
                     job.Address = (string)reader["Address"];
                     job.PostingTime = (string)reader["PostingTime"];
                     job.NumberOfRecruit = (string)reader["NumberOfRecruit"];
-                    job.Contact = (string)reader["Contact"];
-
+                    //job.Contact = (string)reader["Contact"];
+                    
                     jobs.Add(job);
                 }
                 reader.Close();
@@ -58,6 +58,34 @@ namespace FinalProject
                 while (reader.Read())
                 {
                     UserAccount account = new UserAccount();
+                    account.Id = (int)reader["Id"];
+                    account.Gmail = (string)reader["Gmail"];
+                    account.UserName = (string)reader["Name"];
+                    account.Password = (string)reader["Password"];
+
+                    accounts.Add(account);
+                }
+                reader.Close();
+                connection.Close();
+                return accounts;
+            }
+        }
+
+        public static List<Employers> Company()
+        {
+            string connectionString = "Data Source=TonyNyan\\TONYNYAN;Initial Catalog=ManagerJobs;Integrated Security=True";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                SqlCommand command = new SqlCommand("SELECT * FROM Employers", connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+                List<Employers> accounts = new List<Employers>();
+                while (reader.Read())
+                {
+                    Employers account = new Employers();
                     account.Id = (int)reader["Id"];
                     account.Gmail = (string)reader["Gmail"];
                     account.UserName = (string)reader["Name"];

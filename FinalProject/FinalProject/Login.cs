@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -70,7 +72,8 @@ namespace FinalProject
             btnLogin.ForeColor= Color.Black;
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public static int IdCompany;
+       private void btnLogin_Click(object sender, EventArgs e)
         {
             if( tbUserName.Text.Length==0)
             {
@@ -88,6 +91,18 @@ namespace FinalProject
                 {
                     this.Hide();
                     FindJob form1 = new FindJob();
+                    form1.ShowDialog();
+                }
+                
+            }
+            
+            foreach(Employers E in ReadSQL.Company())
+            {
+                if (panel2.Visible == true && tbUserName.Text == E.UserName && tbPassword.Text == E.Password)
+                {
+                    IdCompany=E.Id;
+                    this.Hide();
+                    CreateJobs form1 = new CreateJobs();
                     form1.ShowDialog();
                 }
             }

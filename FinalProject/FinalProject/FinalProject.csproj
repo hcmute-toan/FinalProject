@@ -80,6 +80,8 @@
     <Compile Include="DescribeJob.Designer.cs">
       <DependentUpon>DescribeJob.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employers.cs" />
+    <Compile Include="JobApplication.cs" />
     <Compile Include="Jobs.cs" />
     <Compile Include="FindJob.cs">
       <SubType>Form</SubType>

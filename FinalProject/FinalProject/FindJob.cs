@@ -7,20 +7,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
 using System.Windows.Forms;
 
 namespace FinalProject
 {
     public partial class FindJob : Form
     {
+        public static UCInformationCompanies uc;
         public FindJob()
         {
             InitializeComponent();
-    
+            
             foreach (Jobs job in ReadSQL.Jobs())
             {
-                
-                UCInformationCompanies UC= new UCInformationCompanies();
+
+                UCInformationCompanies UC = new UCInformationCompanies();
                 UC.lbAddress.Text = job.Address;
                 UC.lbNameCompany.Text = job.CompanyName;
                 UC.lbNameJob.Text = job.NameJob;
@@ -32,11 +34,19 @@ namespace FinalProject
                 this.Controls.Add(UC);
                
                 flowLayoutjobs.Controls.Add(UC);
+                UC.Click += (sender, e) =>
+                {
+                    uc = UC;
+                    //UC.OnClick();
+                    MessageBox.Show($"{job.NameJob}");
+                    DescribeJob describeJob = new DescribeJob();
+                    describeJob.ShowDialog();
+                };
             }
-            
+
             //this.Controls.Add(uCInformationCompanies);
             //flowLayoutjobs.Controls.Add(uCInformationCompanies);
-
+            
 
 
 
@@ -66,6 +76,11 @@ namespace FinalProject
         private void guna2CirclePictureBox4_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FindJob_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
