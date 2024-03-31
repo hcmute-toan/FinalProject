@@ -18,6 +18,7 @@ namespace FinalProject
         {
             InitializeComponent();
             ptbEye.Visible = true;
+            this.KeyDown += new KeyEventHandler(Login_KeyDown);
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -85,13 +86,19 @@ namespace FinalProject
                 panelInvalid2.Visible = true;
                 return;
             }
-            foreach(UserAccount account in ReadSQL.Accounts())
+            if (panel1.Visible == false && panel2.Visible == false)
+            {
+                MessageBox.Show("Please select a login type !!!");
+                return;
+            }
+            foreach (UserAccount account in ReadSQL.Accounts())
             {
                 if(panel1.Visible==true && tbUserName.Text==account.UserName &&  tbPassword.Text==account.Password)
                 {
                     this.Hide();
                     FindJob form1 = new FindJob();
                     form1.ShowDialog();
+                    return;
                 }
                 
             }
@@ -104,8 +111,11 @@ namespace FinalProject
                     this.Hide();
                     CreateJobs form1 = new CreateJobs();
                     form1.ShowDialog();
+                    return;
                 }
             }
+            MessageBox.Show("Incorrect password or account!!!");
+            return;
         }
 
         private void guna2CirclePictureBox4_Click(object sender, EventArgs e)
@@ -113,7 +123,7 @@ namespace FinalProject
             Application.Exit();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label4_Click_1(object sender, EventArgs e)
         {
             panel1.Visible = true;
             panel2.Visible = false;
@@ -151,10 +161,39 @@ namespace FinalProject
             signUp.ShowDialog();
         }
 
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.FromArgb(0, 222, 0);
+        }
 
-        //private void guna2CirclePictureBox4_MouseHover(object sender, EventArgs e)
-        //{
-        //    guna2CirclePictureBox4.Width *= 0.5;
-        //}
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.FromArgb(0, 222, 195);
+        }
+
+     
+
+        private void label4_MouseEnter_1(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.FromArgb(0, 222, 0);
+        }
+
+        private void label4_MouseLeave_1(object sender, EventArgs e)
+        {
+            label4.ForeColor = Color.FromArgb(0, 222, 195);
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter) 
+            {
+                MessageBox.Show("Enter vua duoc nhan !!!");
+            }
+        }
     }
 }

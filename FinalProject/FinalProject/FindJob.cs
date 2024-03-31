@@ -21,7 +21,6 @@ namespace FinalProject
             
             foreach (Jobs job in ReadSQL.Jobs())
             {
-
                 UCInformationCompanies UC = new UCInformationCompanies();
                 UC.lbAddress.Text = job.Address;
                 UC.lbNameCompany.Text = job.CompanyName;
@@ -44,10 +43,6 @@ namespace FinalProject
 
             //this.Controls.Add(uCInformationCompanies);
             //flowLayoutjobs.Controls.Add(uCInformationCompanies);
-            
-
-
-
         }
        
 
@@ -80,5 +75,84 @@ namespace FinalProject
         {
 
         }
+
+        private void TbFind_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        public void FindJobByNameAndAddress()
+        {
+            foreach (Jobs job in ReadSQL.Jobs())
+            {
+                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && guna2ComboBox1.Text=="")
+                {
+                    UCInformationCompanies UC1 = new UCInformationCompanies();
+                    UC1.lbAddress.Text = job.Address;
+                    UC1.lbNameCompany.Text = job.CompanyName;
+                    UC1.lbNameJob.Text = job.NameJob;
+                    UC1.lbNeedPosition.Text = job.PositionNeeded;
+                    UC1.lbRecruit.Text = job.NumberOfRecruit;
+                    UC1.lbContact.Text = job.Contact;
+                    UC1.lbTime.Text = job.PostingTime;
+                    UC1.lbSalary.Text = job.Salary;
+                    this.Controls.Add(UC1);
+
+                    flowLayoutjobs.Controls.Add(UC1);
+                    UC1.Click += (sender, e) =>
+                    {
+                        uc = UC1;
+                        DescribeJob describeJob = new DescribeJob();
+                        describeJob.ShowDialog();
+                    };
+                }
+                if (TbFind.Text.ToUpper().Replace(" ", "") == "" && guna2ComboBox1.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
+                {
+                    UCInformationCompanies UC1 = new UCInformationCompanies();
+                    UC1.lbAddress.Text = job.Address;
+                    UC1.lbNameCompany.Text = job.CompanyName;
+                    UC1.lbNameJob.Text = job.NameJob;
+                    UC1.lbNeedPosition.Text = job.PositionNeeded;
+                    UC1.lbRecruit.Text = job.NumberOfRecruit;
+                    UC1.lbContact.Text = job.Contact;
+                    UC1.lbTime.Text = job.PostingTime;
+                    UC1.lbSalary.Text = job.Salary;
+                    this.Controls.Add(UC1);
+
+                    flowLayoutjobs.Controls.Add(UC1);
+                    UC1.Click += (sender, e) =>
+                    {
+                        uc = UC1;
+                        DescribeJob describeJob = new DescribeJob();
+                        describeJob.ShowDialog();
+                    };
+                }
+                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && guna2ComboBox1.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
+                {
+                    UCInformationCompanies UC1 = new UCInformationCompanies();
+                    UC1.lbAddress.Text = job.Address;
+                    UC1.lbNameCompany.Text = job.CompanyName;
+                    UC1.lbNameJob.Text = job.NameJob;
+                    UC1.lbNeedPosition.Text = job.PositionNeeded;
+                    UC1.lbRecruit.Text = job.NumberOfRecruit;
+                    UC1.lbContact.Text = job.Contact;
+                    UC1.lbTime.Text = job.PostingTime;
+                    UC1.lbSalary.Text = job.Salary;
+                    this.Controls.Add(UC1);
+
+                    flowLayoutjobs.Controls.Add(UC1);
+                    UC1.Click += (sender, e) =>
+                    {
+                        uc = UC1;
+                        DescribeJob describeJob = new DescribeJob();
+                        describeJob.ShowDialog();
+                    };
+                }
+            }
+        }
+        public void guna2CirclePictureBox2_Click(object sender, EventArgs e)
+        {
+            FindJobByNameAndAddress();
+        }
+
     }
 }

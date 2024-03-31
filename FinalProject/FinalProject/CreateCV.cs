@@ -16,5 +16,10 @@ namespace FinalProject
         {
             InitializeComponent();
         }
+
+        private void CreateCV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

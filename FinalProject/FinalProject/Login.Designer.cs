@@ -32,14 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ptbHidden = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.ptbEye = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -58,11 +57,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ptbHidden = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.guna2Panel7.SuspendLayout();
@@ -72,6 +71,7 @@
             this.guna2Panel4.SuspendLayout();
             this.panelInvalid1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +92,7 @@
             this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel3.BackgroundImage")));
             this.guna2Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Panel3.Controls.Add(this.label4);
             this.guna2Panel3.Controls.Add(this.ptbEye);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox3);
             this.guna2Panel3.Controls.Add(this.label9);
@@ -99,7 +100,6 @@
             this.guna2Panel3.Controls.Add(this.panel2);
             this.guna2Panel3.Controls.Add(this.panel1);
             this.guna2Panel3.Controls.Add(this.label7);
-            this.guna2Panel3.Controls.Add(this.label4);
             this.guna2Panel3.Controls.Add(this.btnLogin);
             this.guna2Panel3.Controls.Add(this.label5);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox2);
@@ -109,29 +109,31 @@
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Controls.Add(this.label1);
             this.guna2Panel3.Controls.Add(this.ptbHidden);
-            this.guna2Panel3.Location = new System.Drawing.Point(210, 32);
+            this.guna2Panel3.Location = new System.Drawing.Point(201, 32);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(740, 568);
             this.guna2Panel3.TabIndex = 2;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
-            // ptbHidden
+            // label4
             // 
-            this.ptbHidden.Image = ((System.Drawing.Image)(resources.GetObject("ptbHidden.Image")));
-            this.ptbHidden.ImageRotate = 0F;
-            this.ptbHidden.Location = new System.Drawing.Point(650, 287);
-            this.ptbHidden.Name = "ptbHidden";
-            this.ptbHidden.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.ptbHidden.Size = new System.Drawing.Size(35, 34);
-            this.ptbHidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbHidden.TabIndex = 18;
-            this.ptbHidden.TabStop = false;
-            this.ptbHidden.Click += new System.EventHandler(this.ptbHidden_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("SVN-FFF Tusj", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(214, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 28);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Candidates";
+            this.label4.Click += new System.EventHandler(this.label4_Click_1);
+            this.label4.MouseEnter += new System.EventHandler(this.label4_MouseEnter_1);
+            this.label4.MouseLeave += new System.EventHandler(this.label4_MouseLeave_1);
             // 
             // ptbEye
             // 
             this.ptbEye.Image = ((System.Drawing.Image)(resources.GetObject("ptbEye.Image")));
             this.ptbEye.ImageRotate = 0F;
-            this.ptbEye.Location = new System.Drawing.Point(650, 292);
+            this.ptbEye.Location = new System.Drawing.Point(650, 288);
             this.ptbEye.Name = "ptbEye";
             this.ptbEye.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.ptbEye.Size = new System.Drawing.Size(35, 34);
@@ -144,7 +146,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.label9.ForeColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(325, 537);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(124, 16);
@@ -156,7 +158,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.label8.ForeColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(331, 422);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 16);
@@ -165,7 +167,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.SeaGreen;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
             this.panel2.Location = new System.Drawing.Point(420, 101);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(145, 3);
@@ -174,8 +176,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SeaGreen;
-            this.panel1.Location = new System.Drawing.Point(209, 101);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.panel1.Location = new System.Drawing.Point(210, 101);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(141, 3);
             this.panel1.TabIndex = 13;
@@ -185,30 +187,19 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("SVN-FFF Tusj", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.label7.ForeColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(429, 70);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 28);
             this.label7.TabIndex = 12;
             this.label7.Text = "Recruiters";
             this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("SVN-FFF Tusj", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
-            this.label4.Location = new System.Drawing.Point(213, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 28);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Candidates";
-            this.label4.UseWaitCursor = true;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label7.MouseEnter += new System.EventHandler(this.label7_MouseEnter);
+            this.label7.MouseLeave += new System.EventHandler(this.label7_MouseLeave);
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.FlatAppearance.BorderColor = System.Drawing.Color.SeaGreen;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumSeaGreen;
             this.btnLogin.Font = new System.Drawing.Font("SVN-FFF Tusj", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -226,8 +217,8 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
-            this.label5.Location = new System.Drawing.Point(88, 302);
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(88, 294);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 25);
             this.label5.TabIndex = 8;
@@ -237,7 +228,7 @@
             // 
             this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(31, 293);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(31, 285);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(35, 36);
@@ -398,7 +389,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(88, 160);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 25);
@@ -422,12 +413,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("SVN-FFF Tusj", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(222)))), ((int)(((byte)(195)))));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(335, 3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
+            // 
+            // ptbHidden
+            // 
+            this.ptbHidden.Image = ((System.Drawing.Image)(resources.GetObject("ptbHidden.Image")));
+            this.ptbHidden.ImageRotate = 0F;
+            this.ptbHidden.Location = new System.Drawing.Point(650, 287);
+            this.ptbHidden.Name = "ptbHidden";
+            this.ptbHidden.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.ptbHidden.Size = new System.Drawing.Size(35, 34);
+            this.ptbHidden.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbHidden.TabIndex = 18;
+            this.ptbHidden.TabStop = false;
+            this.ptbHidden.Click += new System.EventHandler(this.ptbHidden_Click);
             // 
             // pictureBox1
             // 
@@ -452,10 +456,10 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbEye)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.guna2Panel7.ResumeLayout(false);
@@ -469,6 +473,7 @@
             this.panelInvalid1.ResumeLayout(false);
             this.panelInvalid1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbHidden)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -496,7 +501,6 @@
         private System.Windows.Forms.Button btnLogin;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label9;
@@ -505,5 +509,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptbEye;
         private Guna.UI2.WinForms.Guna2CirclePictureBox ptbHidden;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private System.Windows.Forms.Label label4;
     }
 }

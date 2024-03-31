@@ -66,10 +66,10 @@ namespace FinalProject
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(-1, 11);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(106, 105);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(99, 102);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 2;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -78,7 +78,7 @@ namespace FinalProject
             // 
             this.lbNameCompany.AutoSize = true;
             this.lbNameCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameCompany.Location = new System.Drawing.Point(3, 6);
+            this.lbNameCompany.Location = new System.Drawing.Point(5, 5);
             this.lbNameCompany.Margin = new System.Windows.Forms.Padding(5);
             this.lbNameCompany.Name = "lbNameCompany";
             this.lbNameCompany.Size = new System.Drawing.Size(94, 20);
@@ -89,7 +89,7 @@ namespace FinalProject
             // 
             this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(154, 6);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(142, 5);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(18, 20);
@@ -101,7 +101,7 @@ namespace FinalProject
             // 
             this.lbNameJob.AutoSize = true;
             this.lbNameJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNameJob.Location = new System.Drawing.Point(121, 8);
+            this.lbNameJob.Location = new System.Drawing.Point(141, 9);
             this.lbNameJob.Name = "lbNameJob";
             this.lbNameJob.Size = new System.Drawing.Size(126, 20);
             this.lbNameJob.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace FinalProject
             // lbAddress
             // 
             this.lbAddress.AutoSize = true;
-            this.lbAddress.Location = new System.Drawing.Point(122, 110);
+            this.lbAddress.Location = new System.Drawing.Point(142, 61);
             this.lbAddress.Name = "lbAddress";
             this.lbAddress.Size = new System.Drawing.Size(110, 16);
             this.lbAddress.TabIndex = 6;
@@ -120,7 +120,7 @@ namespace FinalProject
             // 
             this.lbNeedPosition.AutoSize = true;
             this.lbNeedPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNeedPosition.Location = new System.Drawing.Point(413, 9);
+            this.lbNeedPosition.Location = new System.Drawing.Point(403, 10);
             this.lbNeedPosition.Name = "lbNeedPosition";
             this.lbNeedPosition.Size = new System.Drawing.Size(162, 18);
             this.lbNeedPosition.TabIndex = 7;
@@ -130,7 +130,7 @@ namespace FinalProject
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(613, 68);
+            this.label5.Location = new System.Drawing.Point(644, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(142, 18);
             this.label5.TabIndex = 8;
@@ -140,7 +140,7 @@ namespace FinalProject
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(645, 110);
+            this.label6.Location = new System.Drawing.Point(643, 108);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 18);
             this.label6.TabIndex = 9;
@@ -151,7 +151,7 @@ namespace FinalProject
             // 
             this.lbRecruit.AutoSize = true;
             this.lbRecruit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbRecruit.Location = new System.Drawing.Point(761, 68);
+            this.lbRecruit.Location = new System.Drawing.Point(792, 68);
             this.lbRecruit.Name = "lbRecruit";
             this.lbRecruit.Size = new System.Drawing.Size(16, 18);
             this.lbRecruit.TabIndex = 10;
@@ -161,7 +161,7 @@ namespace FinalProject
             // 
             this.lbTime.AutoSize = true;
             this.lbTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTime.Location = new System.Drawing.Point(716, 110);
+            this.lbTime.Location = new System.Drawing.Point(728, 108);
             this.lbTime.Name = "lbTime";
             this.lbTime.Size = new System.Drawing.Size(80, 18);
             this.lbTime.TabIndex = 11;
@@ -171,7 +171,7 @@ namespace FinalProject
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(747, 11);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(768, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(40, 38);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -199,7 +199,7 @@ namespace FinalProject
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(333, 62);
+            this.label1.Location = new System.Drawing.Point(321, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 15;
@@ -209,7 +209,7 @@ namespace FinalProject
             // lbSalary
             // 
             this.lbSalary.AutoSize = true;
-            this.lbSalary.Location = new System.Drawing.Point(413, 61);
+            this.lbSalary.Location = new System.Drawing.Point(403, 61);
             this.lbSalary.Name = "lbSalary";
             this.lbSalary.Size = new System.Drawing.Size(83, 16);
             this.lbSalary.TabIndex = 16;
@@ -218,7 +218,7 @@ namespace FinalProject
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.panel1.Location = new System.Drawing.Point(0, 131);
+            this.panel1.Location = new System.Drawing.Point(0, 145);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 15);
             this.panel1.TabIndex = 17;
@@ -236,15 +236,15 @@ namespace FinalProject
             // 
             this.guna2Panel1.Controls.Add(this.lbNameCompany);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox2);
-            this.guna2Panel1.Location = new System.Drawing.Point(125, 52);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 108);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(193, 34);
+            this.guna2Panel1.Size = new System.Drawing.Size(172, 34);
             this.guna2Panel1.TabIndex = 19;
             // 
             // UCInformationCompanies
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);

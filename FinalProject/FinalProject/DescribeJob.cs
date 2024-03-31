@@ -43,7 +43,7 @@ namespace FinalProject
         private void btnContinue_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CreateCV cv = new CreateCV();
+            InformationUser cv = new InformationUser();
             cv.ShowDialog();
         }
 
