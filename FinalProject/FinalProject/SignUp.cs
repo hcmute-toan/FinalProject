@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace FinalProject
 {
     public partial class SignUp : Form
     {
+        SqlConnection conn = new
+         SqlConnection(Properties.Settings.Default.ConnStr);
         public SignUp()
         {
             InitializeComponent();
@@ -32,10 +35,6 @@ namespace FinalProject
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void ptbEye_Click(object sender, EventArgs e)
         {
@@ -52,6 +51,95 @@ namespace FinalProject
             this.Hide();
             Login login = new Login();
             login.ShowDialog();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;  // candidates
+            panel2.Visible = false;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;  //Recruiters
+            panel1.Visible = false;
+        }
+
+        private bool Check()
+        {
+            if (panel1.Visible == true)     // candidates
+            {
+                foreach (UserAccount account in ReadSQL.Accounts())
+                {
+                    if(account.Gmail==tbGmail.Text)
+                    {
+                        MessageBox.Show("This gmail is exist");
+                        return false;
+                    }
+                }
+            }
+            if (panel2.Visible == true)
+            {
+                foreach (Employers E in ReadSQL.Company())
+                {
+                    if(E.Gmail==tbGmail.Text)
+                    {
+                        MessageBox.Show("This gmail is exist");
+                        return false;
+                    }
+                }
+            }
+            if(tbPassword.Text!=tbRePassword.Text)
+            {
+                MessageBox.Show("The Re-Password different the Password");
+                return false;
+            }
+            if(panel1.Visible == false && panel2.Visible == false) 
+            {
+                MessageBox.Show("dang ky tk");
+                return false;
+            }
+            return true;
+        }
+        private void btnLogin_Click(object sender, EventArgs e)     // dang ky tai khoan.
+        {
+            
+            if(Check()==true)
+            {
+                // đua du lieu vao database 
+                string SQL;
+                string name;
+                if (panel1.Visible == true)
+                {
+                     name = "Candidates";
+                }// CANDIDATES
+                else
+                {
+                     name = "Employers";
+                }
+                
+                SQL = string.Format($"INSERT INTO {name}" +"(Name,Gmail,Password) VALUES ('{0}','{1}','{2}')",tbUserName.Text,tbGmail.Text,tbPassword.Text);
+                try
+                {
+                    // Ket noi
+                    conn.Open();
+                    SqlCommand cmd = new SqlCommand(SQL, conn);
+                    if (cmd.ExecuteNonQuery() > 0)
+                        MessageBox.Show("Successful!!!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Fail!!!" + ex);
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

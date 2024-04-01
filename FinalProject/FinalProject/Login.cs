@@ -151,6 +151,11 @@ namespace FinalProject
             signUp.ShowDialog();
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         //private void guna2CirclePictureBox4_MouseHover(object sender, EventArgs e)
         //{
