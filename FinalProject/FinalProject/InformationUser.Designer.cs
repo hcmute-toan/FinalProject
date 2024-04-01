@@ -40,7 +40,6 @@
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.btnContinue = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -49,6 +48,7 @@
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.PtbImageUser = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnAddImageUser = new Guna.UI2.WinForms.Guna2Button();
+            this.CbAddressCreCv = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PtbImageUser)).BeginInit();
             this.SuspendLayout();
@@ -187,26 +187,6 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(530, 38);
             this.guna2TextBox1.TabIndex = 55;
             // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(197, 129);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(530, 38);
-            this.guna2TextBox2.TabIndex = 57;
-            // 
             // guna2DateTimePicker1
             // 
             this.guna2DateTimePicker1.Checked = true;
@@ -219,7 +199,7 @@
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.Size = new System.Drawing.Size(530, 36);
             this.guna2DateTimePicker1.TabIndex = 58;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 3, 20, 9, 58, 25, 566);
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 1, 0, 0, 0, 0);
             // 
             // guna2ComboBox1
             // 
@@ -347,12 +327,93 @@
             this.btnAddImageUser.Text = "Add Image";
             this.btnAddImageUser.Click += new System.EventHandler(this.btnAddImageUser_Click);
             // 
+            // CbAddressCreCv
+            // 
+            this.CbAddressCreCv.BackColor = System.Drawing.Color.Transparent;
+            this.CbAddressCreCv.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CbAddressCreCv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbAddressCreCv.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CbAddressCreCv.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CbAddressCreCv.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CbAddressCreCv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CbAddressCreCv.ItemHeight = 30;
+            this.CbAddressCreCv.Items.AddRange(new object[] {
+            "An Giang",
+            "Bà Rịa - Vũng Tàu",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước",
+            "Bình Thuận",
+            "Cà Mau ",
+            "Cao Bằng",
+            "Cần Thơ",
+            "Đà Nẵng",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Điện Biên",
+            "Đồng Nai",
+            "Đồng Tháp",
+            "Gia Lai",
+            "Hà Giang",
+            "Hà Nam",
+            "Hà Nội",
+            "Hà Tĩnh",
+            "Hải Dương",
+            "Hải Phòng",
+            "Hậu Giang",
+            "Hòa Bình",
+            "Hồ Chí Minh",
+            "Hưng Yên",
+            "Khánh Hòa",
+            "Kiên Giang",
+            "Kon Tum",
+            "Lai Châu",
+            "Lâm Đồng",
+            "Lạng Sơn",
+            "Lào Cai",
+            "Long An",
+            "Nam Định",
+            "Nghệ An",
+            "Ninh Bình",
+            "Ninh Thuận",
+            "Phú Thọ",
+            "Phú Yên",
+            "Quảng Bình",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Ninh",
+            "Quảng Trị",
+            "Sóc Trăng",
+            "Sơn La",
+            "Tây Ninh",
+            "Thái Bình",
+            "Thái Nguyên",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Tiền Giang",
+            "TP Hồ Chí Minh",
+            "Trà Vinh",
+            "Tuyên Quang",
+            "Vĩnh Long",
+            "Vĩnh Phúc"});
+            this.CbAddressCreCv.Location = new System.Drawing.Point(197, 130);
+            this.CbAddressCreCv.Name = "CbAddressCreCv";
+            this.CbAddressCreCv.Size = new System.Drawing.Size(530, 36);
+            this.CbAddressCreCv.TabIndex = 66;
+            this.CbAddressCreCv.SelectedIndexChanged += new System.EventHandler(this.CbAddressCreCv_SelectedIndexChanged);
+            // 
             // InformationUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1148, 631);
+            this.Controls.Add(this.CbAddressCreCv);
             this.Controls.Add(this.btnAddImageUser);
             this.Controls.Add(this.PtbImageUser);
             this.Controls.Add(this.guna2TextBox5);
@@ -361,7 +422,6 @@
             this.Controls.Add(this.guna2ComboBox2);
             this.Controls.Add(this.guna2ComboBox1);
             this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.label8);
@@ -397,7 +457,6 @@
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Button btnContinue;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
@@ -406,5 +465,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private Guna.UI2.WinForms.Guna2PictureBox PtbImageUser;
         private Guna.UI2.WinForms.Guna2Button btnAddImageUser;
+        private Guna.UI2.WinForms.Guna2ComboBox CbAddressCreCv;
     }
 }

@@ -25,8 +25,8 @@ namespace FinalProject.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TonyNyan\\TONYNYAN;Initial Catalog=ManagerJobs;Integrated Security=Tru" +
-            "e")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;En" +
+            "crypt=False")]
         public string ConnStr {
             get {
                 return ((string)(this["ConnStr"]));

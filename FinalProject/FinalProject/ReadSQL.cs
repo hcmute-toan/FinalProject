@@ -11,7 +11,7 @@ namespace FinalProject
     {
         public static List<Jobs> Jobs()
         {
-            string connectionString = "Data Source=TonyNyan\\TONYNYAN;Initial Catalog=ManagerJobs;Integrated Security=True";
+            string connectionString = "Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;Encrypt=False";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -45,7 +45,7 @@ namespace FinalProject
         }
         public static List<UserAccount> Accounts()
         {
-            string connectionString = "Data Source=TonyNyan\\TONYNYAN;Initial Catalog=ManagerJobs;Integrated Security=True";
+            string connectionString = "Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;Encrypt=False";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -73,7 +73,7 @@ namespace FinalProject
 
         public static List<Employers> Company()
         {
-            string connectionString = "Data Source=TonyNyan\\TONYNYAN;Initial Catalog=ManagerJobs;Integrated Security=True";
+            string connectionString = "Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;Encrypt=False";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

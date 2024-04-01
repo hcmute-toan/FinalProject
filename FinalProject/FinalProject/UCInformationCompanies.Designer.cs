@@ -77,11 +77,11 @@ namespace FinalProject
             // lbNameCompany
             // 
             this.lbNameCompany.AutoSize = true;
-            this.lbNameCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameCompany.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameCompany.Location = new System.Drawing.Point(5, 5);
             this.lbNameCompany.Margin = new System.Windows.Forms.Padding(5);
             this.lbNameCompany.Name = "lbNameCompany";
-            this.lbNameCompany.Size = new System.Drawing.Size(94, 20);
+            this.lbNameCompany.Size = new System.Drawing.Size(88, 20);
             this.lbNameCompany.TabIndex = 3;
             this.lbNameCompany.Text = "Tuyensansi";
             // 
@@ -100,19 +100,20 @@ namespace FinalProject
             // lbNameJob
             // 
             this.lbNameJob.AutoSize = true;
-            this.lbNameJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameJob.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameJob.Location = new System.Drawing.Point(141, 9);
             this.lbNameJob.Name = "lbNameJob";
-            this.lbNameJob.Size = new System.Drawing.Size(126, 20);
+            this.lbNameJob.Size = new System.Drawing.Size(122, 20);
             this.lbNameJob.TabIndex = 5;
             this.lbNameJob.Text = "RÚT HẦM CẦU";
             // 
             // lbAddress
             // 
             this.lbAddress.AutoSize = true;
+            this.lbAddress.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAddress.Location = new System.Drawing.Point(142, 61);
             this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(110, 16);
+            this.lbAddress.Size = new System.Drawing.Size(111, 16);
             this.lbAddress.TabIndex = 6;
             this.lbAddress.Text = "TP HỒ CHÍ MINH";
             // 
@@ -262,7 +263,7 @@ namespace FinalProject
             this.Controls.Add(this.lbNameJob);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Name = "UCInformationCompanies";
-            this.Size = new System.Drawing.Size(811, 163);
+            this.Size = new System.Drawing.Size(825, 163);
             this.Load += new System.EventHandler(this.UCInformationCompanies_Load);
             this.Click += new System.EventHandler(this.UCInformationCompanies_Click);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();

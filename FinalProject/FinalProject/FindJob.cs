@@ -18,7 +18,16 @@ namespace FinalProject
         public FindJob()
         {
             InitializeComponent();
-            
+
+
+            //this.Controls.Add(uCInformationCompanies);
+            //flowLayoutjobs.Controls.Add(uCInformationCompanies);
+            reset();
+        }
+       
+        public void reset()
+        {
+            flowLayoutjobs.Controls.Clear();
             foreach (Jobs job in ReadSQL.Jobs())
             {
                 UCInformationCompanies UC = new UCInformationCompanies();
@@ -31,7 +40,7 @@ namespace FinalProject
                 UC.lbTime.Text = job.PostingTime;
                 UC.lbSalary.Text = job.Salary;
                 this.Controls.Add(UC);
-               
+
                 flowLayoutjobs.Controls.Add(UC);
                 UC.Click += (sender, e) =>
                 {
@@ -41,11 +50,7 @@ namespace FinalProject
                 };
             }
 
-            //this.Controls.Add(uCInformationCompanies);
-            //flowLayoutjobs.Controls.Add(uCInformationCompanies);
         }
-       
-
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -82,9 +87,10 @@ namespace FinalProject
         }
         public void FindJobByNameAndAddress()
         {
+
             foreach (Jobs job in ReadSQL.Jobs())
             {
-                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && guna2ComboBox1.Text=="")
+                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", ""))
                 {
                     UCInformationCompanies UC1 = new UCInformationCompanies();
                     UC1.lbAddress.Text = job.Address;
@@ -105,7 +111,7 @@ namespace FinalProject
                         describeJob.ShowDialog();
                     };
                 }
-                if (TbFind.Text.ToUpper().Replace(" ", "") == "" && guna2ComboBox1.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
+                if (TbFind.Text.ToUpper().Replace(" ", "") == "" && CBAddress.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
                 {
                     UCInformationCompanies UC1 = new UCInformationCompanies();
                     UC1.lbAddress.Text = job.Address;
@@ -126,7 +132,7 @@ namespace FinalProject
                         describeJob.ShowDialog();
                     };
                 }
-                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && guna2ComboBox1.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
+                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && CBAddress.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
                 {
                     UCInformationCompanies UC1 = new UCInformationCompanies();
                     UC1.lbAddress.Text = job.Address;
@@ -151,8 +157,13 @@ namespace FinalProject
         }
         public void guna2CirclePictureBox2_Click(object sender, EventArgs e)
         {
+            flowLayoutjobs.Controls.Clear();
             FindJobByNameAndAddress();
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
     }
 }

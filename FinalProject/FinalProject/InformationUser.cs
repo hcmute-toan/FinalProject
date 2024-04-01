@@ -41,5 +41,10 @@ namespace FinalProject
             CreateCV createCV = new CreateCV();
             createCV.ShowDialog();
         }
+
+        private void CbAddressCreCv_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

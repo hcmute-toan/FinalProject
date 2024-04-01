@@ -173,7 +173,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 16);
             this.label1.TabIndex = 35;
@@ -363,7 +363,7 @@
             this.TbCompany.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TbCompany.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TbCompany.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TbCompany.Location = new System.Drawing.Point(167, 4);
+            this.TbCompany.Location = new System.Drawing.Point(167, 9);
             this.TbCompany.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TbCompany.Name = "TbCompany";
             this.TbCompany.PasswordChar = '\0';

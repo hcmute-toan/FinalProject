@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ConnStr" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=TonyNyan\TONYNYAN;Initial Catalog=ManagerJobs;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=YNWA\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;Encrypt=False</Value>
     </Setting>
   </Settings>
 </SettingsFile>
