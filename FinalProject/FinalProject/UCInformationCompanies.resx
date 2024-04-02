@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2CirclePictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="PicBoxLogoCompany.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAADt0RVh0Q29tbWVudAB4cjpkOkRBR0JEbFFWdnRrOjYsajo1NDQ5Nzc4OTIxNzQy
+        vgAADr4B6kKxwAAAADt0RVh0Q29tbWVudAB4cjpkOkRBR0JEbFFWdnRrOjYsajo1NDQ5Nzc4OTIxNzQy
         ODY0MTgxLHQ6MjQwMzMxMDY/916MAABU6UlEQVR4Xu3djd8NZb///98f9H3s/d2/rpt2t1cqV0ikUIqS
         SLlJkkRKSSmlUEJuiogQElEiUaQkSdRZSCiS20R772sfX+9pluZc52etNWutmbVm5nx9Ho/ng3OtuTlm
         1lrzmTnmmOP4//7PX1s4AACQbiR0AAAygIQOAEAGkNABAMgAEjoAABlAQgcAIANI6AAAZAAJHQCADCCh

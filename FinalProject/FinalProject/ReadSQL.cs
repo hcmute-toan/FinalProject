@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FinalProject
 {
@@ -11,7 +13,7 @@ namespace FinalProject
     {
         public static List<Jobs> Jobs()
         {
-            string connectionString = "Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;Encrypt=False";
+            string connectionString = "Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanli21;Integrated Security=True;Encrypt=False";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -32,10 +34,17 @@ namespace FinalProject
                     job.CompanyName = (string)reader["CompanyName"];
                     job.Salary = (string)reader["Salary"];
                     job.Address = (string)reader["Address"];
-                    job.PostingTime = (string)reader["PostingTime"];
                     job.NumberOfRecruit = (string)reader["NumberOfRecruit"];
+                    job.PostingTime = (string)reader["PostingTime"];
+                    job.Image1 = (byte[])reader["Pic"];
+                  
+                    MessageBox.Show("Đây là thông" + job.Image1);
+
+
+
+
                     //job.Contact = (string)reader["Contact"];
-                    
+
                     jobs.Add(job);
                 }
                 reader.Close();

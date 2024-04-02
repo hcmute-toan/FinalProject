@@ -222,10 +222,10 @@
             // PtbImageLogoCompany
             // 
             this.PtbImageLogoCompany.ImageRotate = 0F;
-            this.PtbImageLogoCompany.Location = new System.Drawing.Point(655, 78);
+            this.PtbImageLogoCompany.Location = new System.Drawing.Point(655, 102);
             this.PtbImageLogoCompany.Name = "PtbImageLogoCompany";
             this.PtbImageLogoCompany.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PtbImageLogoCompany.Size = new System.Drawing.Size(272, 287);
+            this.PtbImageLogoCompany.Size = new System.Drawing.Size(255, 263);
             this.PtbImageLogoCompany.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PtbImageLogoCompany.TabIndex = 77;
             this.PtbImageLogoCompany.TabStop = false;

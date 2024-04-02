@@ -25,11 +25,44 @@ namespace FinalProject.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanlliii;Integrated Security=True;En" +
-            "crypt=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanli21;Integrated Security=True;Enc" +
+            "rypt=False")]
         public string ConnStr {
             get {
                 return ((string)(this["ConnStr"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YNWA\\SQLEXPRESS;Initial Catalog=quanli21;Integrated Security=True;Enc" +
+            "rypt=False")]
+        public string quanli21ConnectionString {
+            get {
+                return ((string)(this["quanli21ConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YNWA\\SQLEXPRESS;Initial Catalog=imagae;Integrated Security=True;Encry" +
+            "pt=False")]
+        public string imagaeConnectionString {
+            get {
+                return ((string)(this["imagaeConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YNWA\\SQLEXPRESS;Initial Catalog=MetROi;Integrated Security=True;Encry" +
+            "pt=True;TrustServerCertificate=True")]
+        public string MetROiConnectionString {
+            get {
+                return ((string)(this["MetROiConnectionString"]));
             }
         }
     }

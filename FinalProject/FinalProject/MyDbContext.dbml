@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MetROi" Class="MyDbContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=YNWA\SQLEXPRESS;Initial Catalog=MetROi;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="FinalProject.Properties.Settings" SettingsPropertyName="MetROiConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.met" Member="mets">
+    <Type Name="met">
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pic" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>
