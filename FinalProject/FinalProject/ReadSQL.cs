@@ -26,7 +26,7 @@ namespace FinalProject
                 {
                     Jobs job = new Jobs();
                     job.Id = (int)reader["Id"];
-                    //job.CompanyId = (int)reader["CompanyId"];
+                    job.CompanyId = (int)reader["CompanyId"];
                     job.NameJob = (string)reader["NameJob"];
                     job.PositionNeeded = (string)reader["PositionNeeded"];
                     job.CompanyName = (string)reader["CompanyName"];
@@ -34,7 +34,7 @@ namespace FinalProject
                     job.Address = (string)reader["Address"];
                     job.PostingTime = (string)reader["PostingTime"];
                     job.NumberOfRecruit = (string)reader["NumberOfRecruit"];
-                    //job.Contact = (string)reader["Contact"];
+                    job.Contact = (string)reader["Contact"];
                     
                     jobs.Add(job);
                 }

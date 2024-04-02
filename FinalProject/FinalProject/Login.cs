@@ -163,24 +163,24 @@ namespace FinalProject
 
         private void label7_MouseEnter(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.FromArgb(0, 222, 0);
+            LbRecruiters.ForeColor = Color.FromArgb(33, 42, 57);
         }
 
         private void label7_MouseLeave(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.FromArgb(0, 222, 195);
+            LbRecruiters.ForeColor = Color.Transparent;
         }
 
      
 
         private void label4_MouseEnter_1(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.FromArgb(0, 222, 0);
+            LbCandidates.ForeColor = Color.FromArgb(33, 42, 57);
         }
 
         private void label4_MouseLeave_1(object sender, EventArgs e)
         {
-            label4.ForeColor = Color.FromArgb(0, 222, 195);
+            LbCandidates.ForeColor = Color.Transparent;
         }
 
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
@@ -194,6 +194,38 @@ namespace FinalProject
             {
                 MessageBox.Show("Enter vua duoc nhan !!!");
             }
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForgotPaword forgotPaword = new ForgotPaword();
+            forgotPaword.ShowDialog();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LbForgotPasssword_MouseEnter(object sender, EventArgs e)
+        {
+            LbForgotPasssword.ForeColor = Color.FromArgb(33, 42, 57);
+        }
+
+        private void LbForgotPasssword_MouseLeave(object sender, EventArgs e)
+        {
+            LbForgotPasssword.ForeColor = Color.Transparent;
+        }
+
+        private void LbCreateNewAccount_MouseEnter(object sender, EventArgs e)
+        {
+            LbCreateNewAccount.ForeColor = Color.FromArgb(33, 42, 57);
+        }
+
+        private void LbCreateNewAccount_MouseLeave(object sender, EventArgs e)
+        {
+            LbCreateNewAccount.ForeColor = Color.Transparent;
         }
     }
 }

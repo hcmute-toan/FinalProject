@@ -150,6 +150,7 @@
             this.btnBack.Size = new System.Drawing.Size(180, 45);
             this.btnBack.TabIndex = 1;
             this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnContinue
             // 
@@ -210,8 +211,9 @@
             // guna2DateTimePicker1
             // 
             this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.Violet;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.White;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(197, 192);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
@@ -340,7 +342,7 @@
             this.btnAddImageUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.btnAddImageUser.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddImageUser.ForeColor = System.Drawing.Color.White;
-            this.btnAddImageUser.Location = new System.Drawing.Point(893, 471);
+            this.btnAddImageUser.Location = new System.Drawing.Point(890, 466);
             this.btnAddImageUser.Name = "btnAddImageUser";
             this.btnAddImageUser.Size = new System.Drawing.Size(169, 45);
             this.btnAddImageUser.TabIndex = 65;

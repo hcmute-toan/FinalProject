@@ -31,3 +31,4 @@ D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalPro
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.DescribeJob.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.JobsApplication.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.InformationUser.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.ForgotPaword.resources

@@ -65,6 +65,12 @@
     <Compile Include="CreateCV.Designer.cs">
       <DependentUpon>CreateCV.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPaword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPaword.Designer.cs">
+      <DependentUpon>ForgotPaword.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformationUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateCV.resx">
       <DependentUpon>CreateCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPaword.resx">
+      <DependentUpon>ForgotPaword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformationUser.resx">
       <DependentUpon>InformationUser.cs</DependentUpon>

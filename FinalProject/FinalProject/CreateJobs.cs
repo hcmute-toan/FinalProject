@@ -20,6 +20,30 @@ namespace FinalProject
         public CreateJobs()
         {
             InitializeComponent();
+            foreach (Jobs job in ReadSQL.Jobs())
+            {
+
+                if (Login.IdCompany == job.CompanyId)
+                {
+                    UCInformationCompanies UC1 = new UCInformationCompanies();
+                    UC1.lbAddress.Text = job.Address;
+                    UC1.lbNameCompany.Text = job.CompanyName;
+                    UC1.lbNameJob.Text = job.NameJob;
+                    UC1.lbNeedPosition.Text = job.PositionNeeded;
+                    UC1.lbRecruit.Text = job.NumberOfRecruit;
+                    UC1.lbContact.Text = job.Contact;
+                    UC1.lbTime.Text = job.PostingTime;
+                    UC1.lbSalary.Text = job.Salary;
+                    //this.Controls.Add(UC1);
+
+                    flCVs.Controls.Add(UC1);
+                    //UC.Click += (sender, e) =>
+                    //{
+                    //    MessageBox.Show("da nhan thong bao");
+                    //};
+                }
+
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -70,6 +94,21 @@ namespace FinalProject
             {
                 MessageBox.Show("An Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        public static UCInformationCompanies uc1;
+        private void flowLayoutPanel2_Paint(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PtbImageLogoCompany_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

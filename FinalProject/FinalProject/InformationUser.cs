@@ -41,5 +41,12 @@ namespace FinalProject
             CreateCV createCV = new CreateCV();
             createCV.ShowDialog();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DescribeJob describeJob = new DescribeJob();
+            describeJob.ShowDialog();
+        }
     }
 }
