@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.ModelBinding;
 using System.Windows.Forms;
 
 namespace FinalProject
@@ -75,7 +76,12 @@ namespace FinalProject
 
         public static int IdCompany;
        private void btnLogin_Click(object sender, EventArgs e)
-        {
+       {
+            // Su ly chuoi.          
+            string CharRemove = " ";                        
+            tbUserName.Text = tbUserName.Text.Replace(CharRemove,string.Empty);                        
+
+            // kiem tra tai khoan.
             if( tbUserName.Text.Length==0)
             {
                 panelInvalid1.Visible = true;
