@@ -32,3 +32,7 @@ D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalPro
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.JobsApplication.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.InformationUser.resources
 D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.ForgotPaword.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.AcceptCV.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.AcceptCVs.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.UCInformationCV.resources
+D:\Windows Programming\FinalProject\FinalProject\FinalProject\obj\Debug\FinalProject.UpdateJob.resources

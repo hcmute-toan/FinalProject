@@ -36,7 +36,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.tbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbRecruit = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbPositionNeeded = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,12 +57,17 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.CbAddress = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PtbImageLogoCompany)).BeginInit();
@@ -79,6 +83,8 @@
             this.tabPage4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -115,10 +121,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.CbAddress);
             this.tabPage1.Controls.Add(this.PtbImageLogoCompany);
             this.tabPage1.Controls.Add(this.btnAddImageLogoCompany);
             this.tabPage1.Controls.Add(this.guna2Panel1);
-            this.tabPage1.Controls.Add(this.tbAddress);
             this.tabPage1.Controls.Add(this.tbContact);
             this.tabPage1.Controls.Add(this.tbRecruit);
             this.tabPage1.Controls.Add(this.tbPositionNeeded);
@@ -143,10 +149,10 @@
             // PtbImageLogoCompany
             // 
             this.PtbImageLogoCompany.ImageRotate = 0F;
-            this.PtbImageLogoCompany.Location = new System.Drawing.Point(653, 75);
+            this.PtbImageLogoCompany.Location = new System.Drawing.Point(669, 122);
             this.PtbImageLogoCompany.Name = "PtbImageLogoCompany";
             this.PtbImageLogoCompany.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PtbImageLogoCompany.Size = new System.Drawing.Size(272, 287);
+            this.PtbImageLogoCompany.Size = new System.Drawing.Size(257, 257);
             this.PtbImageLogoCompany.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PtbImageLogoCompany.TabIndex = 77;
             this.PtbImageLogoCompany.TabStop = false;
@@ -162,7 +168,7 @@
             this.btnAddImageLogoCompany.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.btnAddImageLogoCompany.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddImageLogoCompany.ForeColor = System.Drawing.Color.White;
-            this.btnAddImageLogoCompany.Location = new System.Drawing.Point(711, 412);
+            this.btnAddImageLogoCompany.Location = new System.Drawing.Point(706, 412);
             this.btnAddImageLogoCompany.Name = "btnAddImageLogoCompany";
             this.btnAddImageLogoCompany.Size = new System.Drawing.Size(169, 52);
             this.btnAddImageLogoCompany.TabIndex = 76;
@@ -183,7 +189,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(910, 17);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(13, 17);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(39, 38);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,27 +212,6 @@
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Post";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // tbAddress
-            // 
-            this.tbAddress.BorderRadius = 20;
-            this.tbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbAddress.DefaultText = "";
-            this.tbAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbAddress.Location = new System.Drawing.Point(212, 438);
-            this.tbAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbAddress.Name = "tbAddress";
-            this.tbAddress.PasswordChar = '\0';
-            this.tbAddress.PlaceholderText = "";
-            this.tbAddress.SelectedText = "";
-            this.tbAddress.Size = new System.Drawing.Size(395, 39);
-            this.tbAddress.TabIndex = 73;
             // 
             // tbContact
             // 
@@ -251,6 +236,109 @@
             // 
             // tbRecruit
             // 
+            this.tbRecruit.AutoCompleteCustomSource.AddRange(new string[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60",
+            "61",
+            "62",
+            "63",
+            "64",
+            "65",
+            "66",
+            "67",
+            "68",
+            "69",
+            "70",
+            "71",
+            "72",
+            "73",
+            "74",
+            "75",
+            "76",
+            "77",
+            "78",
+            "79",
+            "80",
+            "81",
+            "82",
+            "83",
+            "84",
+            "85",
+            "86",
+            "87",
+            "88",
+            "89",
+            "90",
+            "91",
+            "92",
+            "93",
+            "94",
+            "95",
+            "96",
+            "97",
+            "98",
+            "99",
+            "100"});
+            this.tbRecruit.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbRecruit.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tbRecruit.BorderRadius = 20;
             this.tbRecruit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbRecruit.DefaultText = "";
@@ -272,6 +360,200 @@
             // 
             // tbPositionNeeded
             // 
+            this.tbPositionNeeded.AutoCompleteCustomSource.AddRange(new string[] {
+            "Sales Manager",
+            "Marketing Coordinator",
+            "Human Resources Specialist",
+            "Financial Analyst",
+            "Customer Service Representative",
+            "Project Manager",
+            "Software Engineer",
+            "Graphic Designer",
+            "Accountant",
+            "Administrative Assistant",
+            "Web Developer",
+            "Content Writer",
+            "Operations Manager",
+            "Data Analyst",
+            "Quality Assurance Tester",
+            "Business Development Associate",
+            "IT Support Specialist",
+            "Legal Counsel",
+            "Procurement Officer",
+            "Social Media Manager",
+            "Product Manager",
+            "Event Coordinator",
+            "Executive Assistant",
+            "Research Analyst",
+            "Public Relations Specialist",
+            "Recruitment Coordinator",
+            "Systems Administrator",
+            "Marketing Assistant",
+            "Financial Controller",
+            "Customer Success Manager",
+            "Copywriter",
+            "Network Engineer",
+            "Inventory Manager",
+            "HR Coordinator",
+            "UX/UI Designer",
+            "Compliance Officer",
+            "Marketing Associate",
+            "Operations Coordinator",
+            "Technical Writer",
+            "Account Manager",
+            "IT Security Analyst",
+            "Brand Manager",
+            "Training Coordinator",
+            "Data Entry Clerk",
+            "Payroll Administrator",
+            "Internal Auditor",
+            "Front End Developer",
+            "Supply Chain Manager",
+            "Sales Representative",
+            "Office Manager",
+            "Quản lý Bán hàng",
+            "Trợ lý Marketing",
+            "Chuyên viên Nhân sự",
+            "Phân tích Tài chính",
+            "Đại diện Dịch vụ Khách hàng",
+            "Quản lý Dự án",
+            "Kỹ sư Phần mềm",
+            "Nhà Thiết kế Đồ họa",
+            "Kế toán",
+            "Trợ lý Hành chính",
+            "Nhà Phát triển Web",
+            "Tác giả Nội dung",
+            "Quản lý Hoạt động",
+            "Phân tích Dữ liệu",
+            "Kiểm tra Chất lượng",
+            "Trợ lý Phát triển Kinh doanh",
+            "Chuyên viên Hỗ trợ CNTT",
+            "Luật sư",
+            "Quản lý Mua hàng",
+            "Quản lý Mạng xã hội",
+            "Quản lý Sản phẩm",
+            "Tổ chức Sự kiện",
+            "Trợ lý Ban giám đốc",
+            "Phân tích Nghiên cứu",
+            "Chuyên viên Quan hệ Công chúng",
+            "Chuyên viên Tuyển dụng",
+            "Quản trị Hệ thống",
+            "Trợ lý Marketing",
+            "Kiểm soát Tài chính",
+            "Quản lý Thành công Khách hàng",
+            "Tác giả Nội dung",
+            "Kỹ sư Mạng",
+            "Quản lý Tồn kho",
+            "Trợ lý Nhân sự",
+            "Nhà Thiết kế UX/UI",
+            "Chuyên viên Tuân thủ",
+            "Chuyên viên Marketing",
+            "Trợ lý Hoạt động",
+            "Tác giả Kỹ thuật",
+            "Quản lý Tài khoản",
+            "Chuyên viên An ninh Thông tin",
+            "Quản lý Thương hiệu",
+            "Trợ lý Đào tạo",
+            "Nhân viên Nhập liệu",
+            "Quản lý Lương",
+            "Account Executive",
+            "Operations Analyst",
+            "Executive Director",
+            "Data Scientist",
+            "Sales Associate",
+            "Financial Planner",
+            "Customer Support Specialist",
+            "Marketing Manager",
+            "Production Supervisor",
+            "Social Worker",
+            "Software Developer",
+            "Brand Ambassador",
+            "Public Relations Manager",
+            "Recruitment Specialist",
+            "Supply Chain Analyst",
+            "Research Scientist",
+            "Event Planner",
+            "Inventory Analyst",
+            "Customer Experience Manager",
+            "Technical Support Engineer",
+            "Legal Assistant",
+            "Marketing Analyst",
+            "Logistics Coordinator",
+            "Quality Control Inspector",
+            "Financial Advisor",
+            "Administrative Coordinator",
+            "Procurement Manager",
+            "Content Manager",
+            "HR Generalist",
+            "Network Administrator",
+            "Customer Relations Manager",
+            "Operations Coordinator",
+            "Technical Consultant",
+            "Risk Analyst",
+            "Business Development Executive",
+            "Media Planner",
+            "Web Designer",
+            "Executive Secretary",
+            "Sales Coordinator",
+            "Project Coordinator",
+            "Database Administrator",
+            "Brand Strategist",
+            "Public Relations Specialist",
+            "Product Development Manager",
+            "Human Resources Coordinator",
+            "Customer Service Manager",
+            "Market Research Analyst",
+            "IT Manager",
+            "Business Consultant",
+            "Thực thi Tài khoản",
+            "Phân tích Hoạt động",
+            "Giám đốc Hành chính",
+            "Nhà Khoa học Dữ liệu",
+            "Đại diện Bán hàng",
+            "Kế hoạch Tài chính",
+            "Chuyên viên Hỗ trợ Khách hàng",
+            "Quản lý Marketing",
+            "Giám sát Sản xuất",
+            "Công nhân Xã hội",
+            "Nhà Phát triển Phần mềm",
+            "Đại sứ Thương hiệu",
+            "Quản lý Quan hệ Công chúng",
+            "Chuyên viên Tuyển dụng",
+            "Phân tích Chuỗi cung ứng",
+            "Nhà Khoa học Nghiên cứu",
+            "Quản lý Sự kiện",
+            "Phân tích Tồn kho",
+            "Quản lý Trải nghiệm Khách hàng",
+            "Kỹ sư Hỗ trợ Kỹ thuật",
+            "Trợ lý Luật sư",
+            "Phân tích Marketing",
+            "Thủ trưởng Vận chuyển",
+            "Kiểm tra Chất lượng",
+            "Tư vấn Tài chính",
+            "Trợ lý Hành chính",
+            "Quản lý Mua hàng",
+            "Quản lý Nội dung",
+            "Chuyên viên Nhân sự",
+            "Quản trị Mạng",
+            "Quản lý Quan hệ Khách hàng",
+            "Trợ lý Hoạt động",
+            "Tư vấn Kỹ thuật",
+            "Phân tích Rủi ro",
+            "Giám đốc Phát triển Kinh doanh",
+            "Chuyên viên Lập kế hoạch Truyền thông",
+            "Nhà Thiết kế Web",
+            "Thư ký Ban điều hành",
+            "Trợ lý Bán hàng",
+            "Trợ lý Dự án",
+            "Quản trị Cơ sở dữ liệu",
+            "Chuyên gia Chiến lược Thương hiệu",
+            "Kiểm toán Nội bộ",
+            "Nhà Phát triển Front-End",
+            "Quản lý Chuỗi cung ứng",
+            "Đại diện Bán hàng",
+            "Quản lý Văn phòng"});
+            this.tbPositionNeeded.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbPositionNeeded.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tbPositionNeeded.BorderRadius = 20;
             this.tbPositionNeeded.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbPositionNeeded.DefaultText = "";
@@ -293,6 +575,199 @@
             // 
             // tbNameJob
             // 
+            this.tbNameJob.AutoCompleteCustomSource.AddRange(new string[] {
+            "Marketing Coordinator",
+            "Human Resources Specialist",
+            "Financial Analyst",
+            "Customer Service Representative",
+            "Project Manager",
+            "Software Engineer",
+            "Graphic Designer",
+            "Accountant",
+            "Administrative Assistant",
+            "Web Developer",
+            "Content Writer",
+            "Operations Manager",
+            "Data Analyst",
+            "Quality Assurance Tester",
+            "Business Development Associate",
+            "IT Support Specialist",
+            "Legal Counsel",
+            "Procurement Officer",
+            "Social Media Manager",
+            "Product Manager",
+            "Event Coordinator",
+            "Executive Assistant",
+            "Research Analyst",
+            "Public Relations Specialist",
+            "Recruitment Coordinator",
+            "Systems Administrator",
+            "Marketing Assistant",
+            "Financial Controller",
+            "Customer Success Manager",
+            "Copywriter",
+            "Network Engineer",
+            "Inventory Manager",
+            "HR Coordinator",
+            "UX/UI Designer",
+            "Compliance Officer",
+            "Marketing Associate",
+            "Operations Coordinator",
+            "Technical Writer",
+            "Account Manager",
+            "IT Security Analyst",
+            "Brand Manager",
+            "Training Coordinator",
+            "Data Entry Clerk",
+            "Payroll Administrator",
+            "Internal Auditor",
+            "Front End Developer",
+            "Supply Chain Manager",
+            "Sales Representative",
+            "Office Manager",
+            "Quản lý Bán hàng",
+            "Trợ lý Marketing",
+            "Chuyên viên Nhân sự",
+            "Phân tích Tài chính",
+            "Đại diện Dịch vụ Khách hàng",
+            "Quản lý Dự án",
+            "Kỹ sư Phần mềm",
+            "Nhà Thiết kế Đồ họa",
+            "Kế toán",
+            "Trợ lý Hành chính",
+            "Nhà Phát triển Web",
+            "Tác giả Nội dung",
+            "Quản lý Hoạt động",
+            "Phân tích Dữ liệu",
+            "Kiểm tra Chất lượng",
+            "Trợ lý Phát triển Kinh doanh",
+            "Chuyên viên Hỗ trợ CNTT",
+            "Luật sư",
+            "Quản lý Mua hàng",
+            "Quản lý Mạng xã hội",
+            "Quản lý Sản phẩm",
+            "Tổ chức Sự kiện",
+            "Trợ lý Ban giám đốc",
+            "Phân tích Nghiên cứu",
+            "Chuyên viên Quan hệ Công chúng",
+            "Chuyên viên Tuyển dụng",
+            "Quản trị Hệ thống",
+            "Trợ lý Marketing",
+            "Kiểm soát Tài chính",
+            "Quản lý Thành công Khách hàng",
+            "Tác giả Nội dung",
+            "Kỹ sư Mạng",
+            "Quản lý Tồn kho",
+            "Trợ lý Nhân sự",
+            "Nhà Thiết kế UX/UI",
+            "Chuyên viên Tuân thủ",
+            "Chuyên viên Marketing",
+            "Trợ lý Hoạt động",
+            "Tác giả Kỹ thuật",
+            "Quản lý Tài khoản",
+            "Chuyên viên An ninh Thông tin",
+            "Quản lý Thương hiệu",
+            "Trợ lý Đào tạo",
+            "Nhân viên Nhập liệu",
+            "Quản lý Lương",
+            "Account Executive",
+            "Operations Analyst",
+            "Executive Director",
+            "Data Scientist",
+            "Sales Associate",
+            "Financial Planner",
+            "Customer Support Specialist",
+            "Marketing Manager",
+            "Production Supervisor",
+            "Social Worker",
+            "Software Developer",
+            "Brand Ambassador",
+            "Public Relations Manager",
+            "Recruitment Specialist",
+            "Supply Chain Analyst",
+            "Research Scientist",
+            "Event Planner",
+            "Inventory Analyst",
+            "Customer Experience Manager",
+            "Technical Support Engineer",
+            "Legal Assistant",
+            "Marketing Analyst",
+            "Logistics Coordinator",
+            "Quality Control Inspector",
+            "Financial Advisor",
+            "Administrative Coordinator",
+            "Procurement Manager",
+            "Content Manager",
+            "HR Generalist",
+            "Network Administrator",
+            "Customer Relations Manager",
+            "Operations Coordinator",
+            "Technical Consultant",
+            "Risk Analyst",
+            "Business Development Executive",
+            "Media Planner",
+            "Web Designer",
+            "Executive Secretary",
+            "Sales Coordinator",
+            "Project Coordinator",
+            "Database Administrator",
+            "Brand Strategist",
+            "Public Relations Specialist",
+            "Product Development Manager",
+            "Human Resources Coordinator",
+            "Customer Service Manager",
+            "Market Research Analyst",
+            "IT Manager",
+            "Business Consultant",
+            "Thực thi Tài khoản",
+            "Phân tích Hoạt động",
+            "Giám đốc Hành chính",
+            "Nhà Khoa học Dữ liệu",
+            "Đại diện Bán hàng",
+            "Kế hoạch Tài chính",
+            "Chuyên viên Hỗ trợ Khách hàng",
+            "Quản lý Marketing",
+            "Giám sát Sản xuất",
+            "Công nhân Xã hội",
+            "Nhà Phát triển Phần mềm",
+            "Đại sứ Thương hiệu",
+            "Quản lý Quan hệ Công chúng",
+            "Chuyên viên Tuyển dụng",
+            "Phân tích Chuỗi cung ứng",
+            "Nhà Khoa học Nghiên cứu",
+            "Quản lý Sự kiện",
+            "Phân tích Tồn kho",
+            "Quản lý Trải nghiệm Khách hàng",
+            "Kỹ sư Hỗ trợ Kỹ thuật",
+            "Trợ lý Luật sư",
+            "Phân tích Marketing",
+            "Thủ trưởng Vận chuyển",
+            "Kiểm tra Chất lượng",
+            "Tư vấn Tài chính",
+            "Trợ lý Hành chính",
+            "Quản lý Mua hàng",
+            "Quản lý Nội dung",
+            "Chuyên viên Nhân sự",
+            "Quản trị Mạng",
+            "Quản lý Quan hệ Khách hàng",
+            "Trợ lý Hoạt động",
+            "Tư vấn Kỹ thuật",
+            "Phân tích Rủi ro",
+            "Giám đốc Phát triển Kinh doanh",
+            "Chuyên viên Lập kế hoạch Truyền thông",
+            "Nhà Thiết kế Web",
+            "Thư ký Ban điều hành",
+            "Trợ lý Bán hàng",
+            "Trợ lý Dự án",
+            "Quản trị Cơ sở dữ liệu",
+            "Chuyên gia Chiến lược Thương hiệu",
+            "Kiểm toán Nội bộ",
+            "Nhà Phát triển Front-End",
+            "Quản lý Chuỗi cung ứng",
+            "Đại diện Bán hàng",
+            "Quản lý Văn phòng"});
+            this.tbNameJob.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbNameJob.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tbNameJob.BorderRadius = 20;
             this.tbNameJob.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbNameJob.DefaultText = "";
@@ -314,6 +789,59 @@
             // 
             // tbSlary
             // 
+            this.tbSlary.AutoCompleteCustomSource.AddRange(new string[] {
+            "8.000.000 VND",
+            "12.500.000 VND",
+            "15.000.000 VND",
+            "20.000.000 VND",
+            "25.000.000 VND",
+            "30.000.000 VND",
+            "35.000.000 VND",
+            "40.000.000 VND",
+            "45.000.000 VND",
+            "50.000.000 VND",
+            "55.000.000 VND",
+            "60.000.000 VND",
+            "65.000.000 VND",
+            "70.000.000 VND",
+            "75.000.000 VND",
+            "80.000.000 VND",
+            "85.000.000 VND",
+            "90.000.000 VND",
+            "95.000.000 VND",
+            "100.000.000 VND",
+            "110.000.000 VND",
+            "120.000.000 VND",
+            "130.000.000 VND",
+            "140.000.000 VND",
+            "150.000.000 VND",
+            "160.000.000 VND",
+            "170.000.000 VND",
+            "180.000.000 VND",
+            "190.000.000 VND",
+            "200.000.000 VND",
+            "4  000 USD",
+            "4  500 USD",
+            "5  000 USD",
+            "5  500 USD",
+            "6  000 USD",
+            "6  500 USD",
+            "7  000 USD",
+            "7  500 USD",
+            "8  000 USD",
+            "8  500 USD",
+            "9  000 USD",
+            "9  500 USD",
+            "10  000 USD",
+            "10  500 USD",
+            "11  000 USD",
+            "11  500 USD",
+            "12  000 USD",
+            "12  500 USD",
+            "13  000 USD",
+            "13  500 USD"});
+            this.tbSlary.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbSlary.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tbSlary.BorderRadius = 20;
             this.tbSlary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbSlary.DefaultText = "";
@@ -335,6 +863,55 @@
             // 
             // tbCompany
             // 
+            this.tbCompany.AutoCompleteCustomSource.AddRange(new string[] {
+            "Vietnam Airlines",
+            "VinGroup",
+            "Viettel Group",
+            "FPT Corporation",
+            "Vietcombank",
+            "PetroVietnam",
+            "Vinamilk",
+            "Masan Group",
+            "VinaCapital",
+            "PV GasHoa Phat Group",
+            "Sun Group",
+            "Novaland Group",
+            "Bitexco Group",
+            "BIDV",
+            "Techcombank",
+            "TH True Milk",
+            "Viettel Group",
+            "FPT Corporation",
+            "VNG Corporation",
+            "CMC Corporation",
+            "MobiFone",
+            "VTC Intecom",
+            "BKAV Corporation",
+            "Viettel Business Solutions Corporation (Vbiz)",
+            "Viettel IDC",
+            "VinaGame",
+            "Microsoft",
+            "IBM",
+            "Google",
+            "Apple",
+            "Amazon",
+            "Facebook",
+            "Siemens",
+            "Bosch",
+            "Oracle",
+            "Qualcomm",
+            "Microsoft Corporation",
+            "Apple Inc.",
+            "Google LLC",
+            "Amazon.com Inc.",
+            "Facebook Inc.",
+            "Oracle Corporation",
+            "IBM (International Business Machines Corporation)",
+            "Adobe Inc.",
+            "SAP SE",
+            "Salesforce.com Inc"});
+            this.tbCompany.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.tbCompany.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.tbCompany.BorderRadius = 20;
             this.tbCompany.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCompany.DefaultText = "";
@@ -462,7 +1039,7 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(22, 6);
+            this.guna2TextBox2.Location = new System.Drawing.Point(310, 7);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -475,7 +1052,7 @@
             // 
             this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(336, 5);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(618, 4);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(46, 45);
@@ -487,7 +1064,7 @@
             // 
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(910, 6);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(13, 11);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(39, 38);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -502,11 +1079,14 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(960, 623);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Update Jobs";
+            this.tabPage3.Text = "Adjust Posted Work ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.guna2TextBox3);
+            this.guna2Panel2.Controls.Add(this.guna2CirclePictureBox3);
+            this.guna2Panel2.Controls.Add(this.guna2Button3);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel2.Controls.Add(this.guna2Button2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -515,11 +1095,27 @@
             this.guna2Panel2.Size = new System.Drawing.Size(954, 67);
             this.guna2Panel2.TabIndex = 75;
             // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BorderRadius = 20;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.Location = new System.Drawing.Point(553, 10);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button3.TabIndex = 77;
+            this.guna2Button3.Text = "Delete";
+            // 
             // guna2PictureBox3
             // 
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(910, 17);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(15, 17);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.Size = new System.Drawing.Size(39, 38);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -536,11 +1132,11 @@
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(381, 10);
+            this.guna2Button2.Location = new System.Drawing.Point(759, 10);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 0;
-            this.guna2Button2.Text = "Post";
+            this.guna2Button2.Text = "Update";
             // 
             // tabPage4
             // 
@@ -550,45 +1146,175 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(960, 623);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Delete Jobs";
+            this.tabPage4.Text = "Accepted CVs";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel3.Controls.Add(this.guna2Button3);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel3.Location = new System.Drawing.Point(3, 553);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(954, 67);
-            this.guna2Panel3.TabIndex = 75;
+            this.guna2Panel3.TabIndex = 76;
             // 
             // guna2PictureBox4
             // 
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(910, 17);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(15, 17);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
             this.guna2PictureBox4.Size = new System.Drawing.Size(39, 38);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox4.TabIndex = 76;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // guna2Button3
+            // guna2TextBox1
             // 
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(381, 10);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button3.TabIndex = 0;
-            this.guna2Button3.Text = "Post";
+            this.guna2TextBox1.BorderRadius = 20;
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(297, 12);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(288, 37);
+            this.guna2TextBox1.TabIndex = 77;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(611, 11);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(46, 45);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 78;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.BorderRadius = 20;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(114, 10);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(288, 37);
+            this.guna2TextBox3.TabIndex = 78;
+            // 
+            // guna2CirclePictureBox3
+            // 
+            this.guna2CirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox3.Image")));
+            this.guna2CirclePictureBox3.ImageRotate = 0F;
+            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(428, 9);
+            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
+            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(46, 45);
+            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox3.TabIndex = 79;
+            this.guna2CirclePictureBox3.TabStop = false;
+            // 
+            // CbAddress
+            // 
+            this.CbAddress.BackColor = System.Drawing.Color.Transparent;
+            this.CbAddress.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.CbAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CbAddress.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.CbAddress.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.CbAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.CbAddress.ItemHeight = 30;
+            this.CbAddress.Items.AddRange(new object[] {
+            "An Giang",
+            "Bà Rịa - Vũng Tàu",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước",
+            "Bình Thuận",
+            "Cà Mau ",
+            "Cao Bằng",
+            "Cần Thơ",
+            "Đà Nẵng",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Điện Biên",
+            "Đồng Nai",
+            "Đồng Tháp",
+            "Gia Lai",
+            "Hà Giang",
+            "Hà Nam",
+            "Hà Nội",
+            "Hà Tĩnh",
+            "Hải Dương",
+            "Hải Phòng",
+            "Hậu Giang",
+            "Hòa Bình",
+            "Hồ Chí Minh",
+            "Hưng Yên",
+            "Khánh Hòa",
+            "Kiên Giang",
+            "Kon Tum",
+            "Lai Châu",
+            "Lâm Đồng",
+            "Lạng Sơn",
+            "Lào Cai",
+            "Long An",
+            "Nam Định",
+            "Nghệ An",
+            "Ninh Bình",
+            "Ninh Thuận",
+            "Phú Thọ",
+            "Phú Yên",
+            "Quảng Bình",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Ninh",
+            "Quảng Trị",
+            "Sóc Trăng",
+            "Sơn La",
+            "Tây Ninh",
+            "Thái Bình",
+            "Thái Nguyên",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Tiền Giang",
+            "TP Hồ Chí Minh",
+            "Trà Vinh",
+            "Tuyên Quang",
+            "Vĩnh Long",
+            "Vĩnh Phúc"});
+            this.CbAddress.Location = new System.Drawing.Point(212, 428);
+            this.CbAddress.Name = "CbAddress";
+            this.CbAddress.Size = new System.Drawing.Size(395, 36);
+            this.CbAddress.TabIndex = 78;
             // 
             // CreateJobs
             // 
@@ -616,6 +1342,8 @@
             this.tabPage4.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -628,7 +1356,6 @@
         private System.Windows.Forms.FlowLayoutPanel flCVs;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox tbAddress;
         private Guna.UI2.WinForms.Guna2TextBox tbContact;
         private Guna.UI2.WinForms.Guna2TextBox tbRecruit;
         private Guna.UI2.WinForms.Guna2TextBox tbPositionNeeded;
@@ -650,12 +1377,17 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2ComboBox CbAddress;
     }
 }

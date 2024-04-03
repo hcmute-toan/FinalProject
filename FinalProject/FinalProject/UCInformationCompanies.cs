@@ -36,5 +36,15 @@ namespace FinalProject
         {
 
         }
+
+        private void lbNameCompany_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

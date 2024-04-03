@@ -76,7 +76,11 @@ namespace FinalProject
         public static int IdCompany;
        private void btnLogin_Click(object sender, EventArgs e)
         {
-            if( tbUserName.Text.Length==0)
+            // Su ly chuoi.          
+            string CharRemove = " ";
+            tbUserName.Text = tbUserName.Text.Replace(CharRemove, string.Empty);
+
+            if ( tbUserName.Text.Length==0)
             {
                 panelInvalid1.Visible = true;
                 return;

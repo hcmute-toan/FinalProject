@@ -66,13 +66,14 @@ namespace FinalProject
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.Size = new System.Drawing.Size(99, 102);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 2;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // lbNameCompany
             // 
@@ -84,6 +85,7 @@ namespace FinalProject
             this.lbNameCompany.Size = new System.Drawing.Size(94, 20);
             this.lbNameCompany.TabIndex = 3;
             this.lbNameCompany.Text = "Tuyensansi";
+            this.lbNameCompany.Click += new System.EventHandler(this.lbNameCompany_Click);
             // 
             // guna2CirclePictureBox2
             // 

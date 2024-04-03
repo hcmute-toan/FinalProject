@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -35,42 +36,74 @@ namespace FinalProject
         {
 
         }
+        public bool Check_Email()
+        {
+            string str = "@gmail.com";
+            //if (Check)
+            {
+
+
+                const string regexPattern = @"^[a-zA-Z0-9]+@[g m a i l ]+(.com)*$";
+
+                // Khởi tạo Regex
+                Regex regex = new Regex(regexPattern);
+
+                // Kiểm tra email với Regex
+                return regex.IsMatch(tbGmail.Text);
+            }
+
+        }
         private bool Check()
         {
-            if (panel1.Visible == true)     // candidates
+            // Su ly chuoi.          
+            string CharRemove = " ";
+            tbGmail.Text = tbGmail.Text.Replace(CharRemove, string.Empty);
+            // kiem tra gmail
+            if (Check_Email() == false)
             {
-                foreach (UserAccount account in ReadSQL.Accounts())
-                {
-                    if (account.Gmail == tbGmail.Text)
-                    {
-                        MessageBox.Show("This gmail is exist");
-                        return false;
-                    }
-                }
-            }
-            if (panel2.Visible == true)
-            {
-                foreach (Employers E in ReadSQL.Company())
-                {
-                    if (E.Gmail == tbGmail.Text)
-                    {
-                        MessageBox.Show("This gmail is exist");
-                        return false;
-                    }
-                }
-            }
-            if (tbPassword.Text != tbReEnterPassword.Text)
-            {
-                MessageBox.Show("The Re-Password different the Password");
+                MessageBox.Show("gmail sai cu phap.");
                 return false;
             }
-            //if (panel1.Visible == false && panel2.Visible == false)
-            //{
-            //    MessageBox.Show("dang ky tk");
-            //    return false;
-            //}
-            return true;
+            else
+            {
+                if (panel1.Visible == true)     // candidates
+                {
+                    foreach (UserAccount account in ReadSQL.Accounts())
+                    {
+                        if (account.Gmail == tbGmail.Text)
+                        {
+                            MessageBox.Show("This gmail is exist");
+                            return false;
+                        }
+                    }
+                }
+                if (panel2.Visible == true)
+                {
+                    foreach (Employers E in ReadSQL.Company())
+                    {
+                        if (E.Gmail == tbGmail.Text)
+                        {
+                            MessageBox.Show("This gmail is exist");
+                            return false;
+                        }
+                    }
+                }
+                if (tbPassword.Text != tbReEnterPassword.Text)
+                {
+                    MessageBox.Show("The Re-Password different the Password");
+                    return false;
+                }
+                //if (panel1.Visible == false && panel2.Visible == false)
+                //{
+                //    MessageBox.Show("dang ky tk");
+                //    return false;
+                //}
+
+                return true;
+            }
+
         }
+
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             if (tbUserName.Text.Length == 0)
@@ -100,6 +133,9 @@ namespace FinalProject
             }
             if (Check() == true)
             {
+                string CharRemove = " ";
+                tbGmail.Text = tbGmail.Text.Replace(CharRemove, string.Empty);
+                tbUserName.Text = tbUserName.Text.Replace(CharRemove, string.Empty);
                 // đua du lieu vao database 
                 string SQL;
                 string name;
@@ -213,6 +249,11 @@ namespace FinalProject
         private void lbConvertLogIn_MouseLeave(object sender, EventArgs e)
         {
             lbConvertLogIn.ForeColor = Color.Transparent;
+        }
+
+        private void tbUserName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -587,6 +587,7 @@
             this.tbUserName.SelectedText = "";
             this.tbUserName.Size = new System.Drawing.Size(465, 30);
             this.tbUserName.TabIndex = 2;
+            this.tbUserName.TextChanged += new System.EventHandler(this.tbUserName_TextChanged);
             // 
             // label2
             // 

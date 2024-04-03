@@ -53,6 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcceptCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceptCV.Designer.cs">
+      <DependentUpon>AcceptCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcceptCVs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceptCVs.Designer.cs">
+      <DependentUpon>AcceptCVs.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckCVs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,7 +141,25 @@
     <Compile Include="UCInformationCompanies.Designer.cs">
       <DependentUpon>UCInformationCompanies.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCInformationCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UCInformationCV.Designer.cs">
+      <DependentUpon>UCInformationCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateJob.Designer.cs">
+      <DependentUpon>UpdateJob.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.cs" />
+    <EmbeddedResource Include="AcceptCV.resx">
+      <DependentUpon>AcceptCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcceptCVs.resx">
+      <DependentUpon>AcceptCVs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckCVs.resx">
       <DependentUpon>CheckCVs.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +201,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCInformationCompanies.resx">
       <DependentUpon>UCInformationCompanies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCInformationCV.resx">
+      <DependentUpon>UCInformationCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateJob.resx">
+      <DependentUpon>UpdateJob.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

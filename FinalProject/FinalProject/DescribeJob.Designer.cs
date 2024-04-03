@@ -32,6 +32,8 @@
             this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.label17 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,7 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.TbTime = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.TbContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.TbRecruit = new Guna.UI2.WinForms.Guna2TextBox();
             this.TbPositon = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,8 +52,7 @@
             this.TbCompany = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.TbDescribe = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.TbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -113,6 +113,38 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1148, 70);
             this.guna2Panel2.TabIndex = 53;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BorderRadius = 20;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(14, 13);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = "Back";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BorderRadius = 20;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.Location = new System.Drawing.Point(955, 13);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.TabIndex = 2;
+            this.guna2Button2.Text = "Continue";
             // 
             // label7
             // 
@@ -188,8 +220,8 @@
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.TbTime);
             this.guna2Panel1.Controls.Add(this.TbAddress);
+            this.guna2Panel1.Controls.Add(this.TbTime);
             this.guna2Panel1.Controls.Add(this.TbContact);
             this.guna2Panel1.Controls.Add(this.TbRecruit);
             this.guna2Panel1.Controls.Add(this.TbPositon);
@@ -231,27 +263,6 @@
             this.TbTime.SelectedText = "";
             this.TbTime.Size = new System.Drawing.Size(395, 39);
             this.TbTime.TabIndex = 58;
-            // 
-            // TbAddress
-            // 
-            this.TbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TbAddress.DefaultText = "";
-            this.TbAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TbAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TbAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TbAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TbAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TbAddress.Location = new System.Drawing.Point(167, 419);
-            this.TbAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TbAddress.Name = "TbAddress";
-            this.TbAddress.PasswordChar = '\0';
-            this.TbAddress.PlaceholderText = "";
-            this.TbAddress.ReadOnly = true;
-            this.TbAddress.SelectedText = "";
-            this.TbAddress.Size = new System.Drawing.Size(395, 39);
-            this.TbAddress.TabIndex = 57;
             // 
             // TbContact
             // 
@@ -411,37 +422,25 @@
             this.TbDescribe.Size = new System.Drawing.Size(463, 470);
             this.TbDescribe.TabIndex = 52;
             // 
-            // guna2Button1
+            // TbAddress
             // 
-            this.guna2Button1.BorderRadius = 20;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(14, 13);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Back";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(955, 13);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button2.TabIndex = 2;
-            this.guna2Button2.Text = "Continue";
+            this.TbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TbAddress.DefaultText = "";
+            this.TbAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TbAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TbAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TbAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TbAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TbAddress.Location = new System.Drawing.Point(167, 419);
+            this.TbAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TbAddress.Name = "TbAddress";
+            this.TbAddress.PasswordChar = '\0';
+            this.TbAddress.PlaceholderText = "";
+            this.TbAddress.SelectedText = "";
+            this.TbAddress.Size = new System.Drawing.Size(395, 44);
+            this.TbAddress.TabIndex = 59;
             // 
             // DescribeJob
             // 
@@ -487,9 +486,9 @@
         private Guna.UI2.WinForms.Guna2TextBox TbNameJob;
         private Guna.UI2.WinForms.Guna2TextBox TbSalary;
         private Guna.UI2.WinForms.Guna2TextBox TbTime;
-        private Guna.UI2.WinForms.Guna2TextBox TbAddress;
         private Guna.UI2.WinForms.Guna2TextBox TbContact;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox TbAddress;
     }
 }
