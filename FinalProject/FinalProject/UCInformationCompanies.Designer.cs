@@ -38,7 +38,7 @@ namespace FinalProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCInformationCompanies));
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.PtbLogoCompany = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lbNameCompany = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lbNameJob = new System.Windows.Forms.Label();
@@ -56,24 +56,25 @@ namespace FinalProject
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.lbDescribeJob = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbLogoCompany)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2CirclePictureBox1
+            // PtbLogoCompany
             // 
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(99, 102);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 2;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
+            this.PtbLogoCompany.Image = ((System.Drawing.Image)(resources.GetObject("PtbLogoCompany.Image")));
+            this.PtbLogoCompany.ImageRotate = 0F;
+            this.PtbLogoCompany.Location = new System.Drawing.Point(0, 0);
+            this.PtbLogoCompany.Name = "PtbLogoCompany";
+            this.PtbLogoCompany.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PtbLogoCompany.Size = new System.Drawing.Size(99, 102);
+            this.PtbLogoCompany.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PtbLogoCompany.TabIndex = 2;
+            this.PtbLogoCompany.TabStop = false;
+            this.PtbLogoCompany.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // lbNameCompany
             // 
@@ -91,7 +92,7 @@ namespace FinalProject
             // 
             this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(142, 5);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(121, 5);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox2.Size = new System.Drawing.Size(18, 20);
@@ -240,13 +241,24 @@ namespace FinalProject
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2Panel1.Location = new System.Drawing.Point(3, 108);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(172, 34);
+            this.guna2Panel1.Size = new System.Drawing.Size(151, 34);
             this.guna2Panel1.TabIndex = 19;
+            // 
+            // lbDescribeJob
+            // 
+            this.lbDescribeJob.AutoSize = true;
+            this.lbDescribeJob.Location = new System.Drawing.Point(644, 13);
+            this.lbDescribeJob.Name = "lbDescribeJob";
+            this.lbDescribeJob.Size = new System.Drawing.Size(44, 16);
+            this.lbDescribeJob.TabIndex = 20;
+            this.lbDescribeJob.Text = "label4";
+            this.lbDescribeJob.Visible = false;
             // 
             // UCInformationCompanies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.lbDescribeJob);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
@@ -262,12 +274,12 @@ namespace FinalProject
             this.Controls.Add(this.lbNeedPosition);
             this.Controls.Add(this.lbAddress);
             this.Controls.Add(this.lbNameJob);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.PtbLogoCompany);
             this.Name = "UCInformationCompanies";
             this.Size = new System.Drawing.Size(811, 163);
             this.Load += new System.EventHandler(this.UCInformationCompanies_Load);
             this.Click += new System.EventHandler(this.UCInformationCompanies_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbLogoCompany)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
@@ -279,7 +291,7 @@ namespace FinalProject
 
         #endregion
 
-        public Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox PtbLogoCompany;
         public System.Windows.Forms.Label lbNameCompany;
         public Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         public System.Windows.Forms.Label lbNameJob;
@@ -292,10 +304,11 @@ namespace FinalProject
         public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lbContact;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label lbSalary;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Label label3;
+        public Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        public Label lbDescribeJob;
     }
 }

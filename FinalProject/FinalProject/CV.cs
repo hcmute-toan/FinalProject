@@ -9,22 +9,28 @@ namespace FinalProject
 {
     public class CV
     {
-        private string id;
+        private int id; // id user
         private string name;
-        private string currentAddress;
+        private string gender;
+        private string address;
+
         private string dateOfBirth;
-        private string phoneNumber;
+
         private string workExperience;
         private string educationAndCertifications;
         private string professionalSkills;
+        private string goalsatwork;
         public CV() { }
-        public string Id { get { return id; } set { id = value; } }
+        public int Id { get { return id; } set { id = value; } }
         public string Name { get { return name; } set { name = value; } }
-        public string CurrentAddress { get { return currentAddress; } set { currentAddress = value; } }
+
         public string DateOfBirth { get { return dateOfBirth; } set { dateOfBirth = value; } }
-        public string PhoneNumber { get { return phoneNumber; } set { phoneNumber = value; } }
+
         public string WorkExperience { get { return workExperience; } set { workExperience = value; } }
         public string EducationAndCertifications { get { return educationAndCertifications; } set { educationAndCertifications = value; } }
         public string ProfessionalSkills { get { return professionalSkills; } set { professionalSkills = value; } }
+        public string Gender { get { return gender; } set { gender = value; } }
+        public string Address { get { return address; } set { address = value; } }
+        public string GoalAtWork { get { return goalsatwork; } set { goalsatwork = value; } }
     }
 }

@@ -33,7 +33,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TbFind = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.flowLayoutjobs = new System.Windows.Forms.FlowLayoutPanel();
@@ -43,6 +42,8 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.Blogs = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.PtbReset = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.CbAddress = new System.Windows.Forms.ComboBox();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,6 +52,7 @@
             this.CreateCV.SuspendLayout();
             this.Tools.SuspendLayout();
             this.Blogs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PtbReset)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -102,8 +104,9 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.CbAddress);
+            this.panel2.Controls.Add(this.PtbReset);
             this.panel2.Controls.Add(this.guna2CirclePictureBox2);
-            this.panel2.Controls.Add(this.guna2ComboBox1);
             this.panel2.Controls.Add(this.TbFind);
             this.panel2.Controls.Add(this.guna2PictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -124,85 +127,6 @@
             this.guna2CirclePictureBox2.TabIndex = 12;
             this.guna2CirclePictureBox2.TabStop = false;
             this.guna2CirclePictureBox2.Click += new System.EventHandler(this.guna2CirclePictureBox2_Click);
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "An Giang",
-            "Bà Rịa - Vũng Tàu",
-            "Bắc Giang",
-            "Bắc Kạn",
-            "Bạc Liêu",
-            "Bắc Ninh",
-            "Bến Tre",
-            "Bình Định",
-            "Bình Dương",
-            "Bình Phước",
-            "Bình Thuận",
-            "Cà Mau ",
-            "Cao Bằng",
-            "Cần Thơ",
-            "Đà Nẵng",
-            "Đắk Lắk",
-            "Đắk Nông",
-            "Điện Biên",
-            "Đồng Nai",
-            "Đồng Tháp",
-            "Gia Lai",
-            "Hà Giang",
-            "Hà Nam",
-            "Hà Nội",
-            "Hà Tĩnh",
-            "Hải Dương",
-            "Hải Phòng",
-            "Hậu Giang",
-            "Hòa Bình",
-            "Hồ Chí Minh",
-            "Hưng Yên",
-            "Khánh Hòa",
-            "Kiên Giang",
-            "Kon Tum",
-            "Lai Châu",
-            "Lâm Đồng",
-            "Lạng Sơn",
-            "Lào Cai",
-            "Long An",
-            "Nam Định",
-            "Nghệ An",
-            "Ninh Bình",
-            "Ninh Thuận",
-            "Phú Thọ",
-            "Phú Yên",
-            "Quảng Bình",
-            "Quảng Nam",
-            "Quảng Ngãi",
-            "Quảng Ninh",
-            "Quảng Trị",
-            "Sóc Trăng",
-            "Sơn La",
-            "Tây Ninh",
-            "Thái Bình",
-            "Thái Nguyên",
-            "Thanh Hóa",
-            "Thừa Thiên Huế",
-            "Tiền Giang",
-            "TP Hồ Chí Minh",
-            "Trà Vinh",
-            "Tuyên Quang",
-            "Vĩnh Long",
-            "Vĩnh Phúc"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(331, 6);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(202, 36);
-            this.guna2ComboBox1.TabIndex = 0;
             // 
             // TbFind
             // 
@@ -498,6 +422,90 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(954, 617);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
+            // PtbReset
+            // 
+            this.PtbReset.Image = ((System.Drawing.Image)(resources.GetObject("PtbReset.Image")));
+            this.PtbReset.ImageRotate = 0F;
+            this.PtbReset.Location = new System.Drawing.Point(642, 3);
+            this.PtbReset.Name = "PtbReset";
+            this.PtbReset.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PtbReset.Size = new System.Drawing.Size(49, 36);
+            this.PtbReset.TabIndex = 13;
+            this.PtbReset.TabStop = false;
+            this.PtbReset.Click += new System.EventHandler(this.PtbReset_Click);
+            // 
+            // CbAddress
+            // 
+            this.CbAddress.FormattingEnabled = true;
+            this.CbAddress.Items.AddRange(new object[] {
+            "An Giang",
+            "Bà Rịa - Vũng Tàu",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước",
+            "Bình Thuận",
+            "Cà Mau ",
+            "Cao Bằng",
+            "Cần Thơ",
+            "Đà Nẵng",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Điện Biên",
+            "Đồng Nai",
+            "Đồng Tháp",
+            "Gia Lai",
+            "Hà Giang",
+            "Hà Nam",
+            "Hà Nội",
+            "Hà Tĩnh",
+            "Hải Dương",
+            "Hải Phòng",
+            "Hậu Giang",
+            "Hòa Bình",
+            "Hồ Chí Minh",
+            "Hưng Yên",
+            "Khánh Hòa",
+            "Kiên Giang",
+            "Kon Tum",
+            "Lai Châu",
+            "Lâm Đồng",
+            "Lạng Sơn",
+            "Lào Cai",
+            "Long An",
+            "Nam Định",
+            "Nghệ An",
+            "Ninh Bình",
+            "Ninh Thuận",
+            "Phú Thọ",
+            "Phú Yên",
+            "Quảng Bình",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Ninh",
+            "Quảng Trị",
+            "Sóc Trăng",
+            "Sơn La",
+            "Tây Ninh",
+            "Thái Bình",
+            "Thái Nguyên",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Tiền Giang",
+            "TP Hồ Chí Minh",
+            "Trà Vinh",
+            "Tuyên Quang",
+            "Vĩnh Long",
+            "Vĩnh Phúc"});
+            this.CbAddress.Location = new System.Drawing.Point(321, 13);
+            this.CbAddress.Name = "CbAddress";
+            this.CbAddress.Size = new System.Drawing.Size(158, 26);
+            this.CbAddress.TabIndex = 0;
+            // 
             // FindJob
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -517,6 +525,7 @@
             this.CreateCV.ResumeLayout(false);
             this.Tools.ResumeLayout(false);
             this.Blogs.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PtbReset)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -535,6 +544,7 @@
         public Guna.UI2.WinForms.Guna2TextBox TbFind;
         public Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        public Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox PtbReset;
+        private System.Windows.Forms.ComboBox CbAddress;
     }
 }

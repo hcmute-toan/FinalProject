@@ -10,11 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using System.Xml.Linq;
-
+using System.IO;
+using System.Web.UI.WebControls;
 namespace FinalProject
 {
     public partial class CreateJobs : Form
     {
+        public static int _idJob;
         SqlConnection conn = new
          SqlConnection(Properties.Settings.Default.ConnStr);
         public CreateJobs()
@@ -34,67 +36,71 @@ namespace FinalProject
                     UC1.lbContact.Text = job.Contact;
                     UC1.lbTime.Text = job.PostingTime;
                     UC1.lbSalary.Text = job.Salary;
-                    //this.Controls.Add(UC1);
+                    this.Controls.Add(UC1);
 
                     flCVs.Controls.Add(UC1);
-                    //UC.Click += (sender, e) =>
-                    //{
-                    //    MessageBox.Show("da nhan thong bao");
-                    //};
+                    UC1.Click += (sender, e) =>
+                    {
+
+                        _idJob = job.Id;
+                        AcceptCVs ac = new AcceptCVs();
+                        ac.ShowDialog();
+                    };
                 }
 
             }
         }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Jobs job = new Jobs();
+            byte[] b = PathToByteArray(this.Text);
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("insert into Jobs values(@CompanyId, @NameJob,@PositionNeeded,@CompanyName,@Salary,@Address,@PostingTime,@NumberOfRecruit,@DescribeJob,@Contact)", conn);
+            cmd.Parameters.Add("@CompanyId", Login.IdCompany);
+            cmd.Parameters.Add("@NameJob", tbNameJob.Text);
+            cmd.Parameters.Add("@PositionNeeded", tbPositionNeeded.Text);
+            cmd.Parameters.Add("@CompanyName", tbCompany.Text);
+            cmd.Parameters.Add("@Salary", tbSlary.Text);
+            cmd.Parameters.Add("@Address", CbAddress.Text);
+            cmd.Parameters.Add("@PostingTime", DateTime.Now.ToString("dd/MM/yyyy"));
+            cmd.Parameters.Add("@NumberOfRecruit", tbRecruit.Text);
+            cmd.Parameters.Add("@DescribeJob", tbDescribeJob.Text);
+            cmd.Parameters.Add("@Contact", tbContact.Text);
 
-            string SQL = string.Format("INSERT INTO Jobs (CompanyId,NameJob,PositionNeeded,CompanyName,Salary,Address,PostingTime,NumberOfRecruit,Contact) VALUES ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')",
-                Login.IdCompany, tbNameJob.Text, tbPositionNeeded.Text,tbCompany.Text, tbSlary.Text, CbAddress.Text, DateTime.Now.ToString("dd/MM/yyyy"), tbRecruit.Text,tbContact.Text);
-            try
+            SqlCommand CMD1 = new SqlCommand("UPDATE Employers SET Picture = @PictureParam WHERE Id = @IdParam", conn);
+            // Cung cấp giá trị cho các thamSqlParameter
+            CMD1.Parameters.Add("@PictureParam", b);
+            CMD1.Parameters.Add("@IdParam", Login.IdCompany);
+            if (cmd.ExecuteNonQuery() > 0 && CMD1.ExecuteNonQuery() > 0)
+            { MessageBox.Show("Succcess!!!"); }
+            else
             {
-                // Ket noi
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(SQL, conn);
-                if (cmd.ExecuteNonQuery() > 0)
-                    MessageBox.Show("Successful!!!");
+                MessageBox.Show("Fail!!!");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Fail!!!" + ex);
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-
+            conn.Close();
         }
 
         private void tbCompany_TextChanged(object sender, EventArgs e)
         {
 
         }
-
+        byte[] PathToByteArray(string path)
+        {
+            MemoryStream m = new MemoryStream();
+            System.Drawing.Image img = System.Drawing.Image.FromFile(path);
+            img.Save(m, System.Drawing.Imaging.ImageFormat.Png);
+            return m.ToArray();
+        }
+       
         private void btnAddImageLogoCompany_Click(object sender, EventArgs e)
         {
-            string imageLocation = "";
-            try
+            OpenFileDialog open = new OpenFileDialog();
+            if (open.ShowDialog() == DialogResult.OK)
             {
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
-                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-                {
-                    imageLocation = dialog.FileName;
-                    PtbImageLogoCompany.ImageLocation = imageLocation;
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("An Error Occured", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                PtbImageLogoCompany.Image = System.Drawing.Image.FromFile(open.FileName);
+                this.Text = open.FileName;
             }
         }
+
         public static UCInformationCompanies uc1;
         private void flowLayoutPanel2_Paint(object sender, EventArgs e)
         {
@@ -107,6 +113,21 @@ namespace FinalProject
         }
 
         private void PtbImageLogoCompany_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CbAddress_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbSlary_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }

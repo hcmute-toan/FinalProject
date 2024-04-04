@@ -23,6 +23,7 @@ namespace FinalProject
             TbRecruit.Text=FindJob.uc.lbRecruit.Text;
             TbSalary.Text=FindJob.uc.lbSalary.Text;
             TbTime.Text=FindJob.uc.lbTime.Text;
+            TbDescribe.Text=FindJob.uc.lbDescribeJob.Text;
         }
 
         private void guna2TextBox6_TextChanged(object sender, EventArgs e)
@@ -50,6 +51,23 @@ namespace FinalProject
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TbCompany_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CreateCV createCV = new CreateCV();
+            createCV.ShowDialog();
         }
     }
 }

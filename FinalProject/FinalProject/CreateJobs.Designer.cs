@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateJobs));
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tbDescribeJob = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.CbAddress = new System.Windows.Forms.ComboBox();
             this.PtbImageLogoCompany = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnAddImageLogoCompany = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -57,17 +60,16 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.CbAddress = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PtbImageLogoCompany)).BeginInit();
@@ -79,12 +81,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.tabPage4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -99,7 +101,7 @@
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1148, 631);
+            this.guna2TabControl1.Size = new System.Drawing.Size(1192, 631);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -121,6 +123,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.tbDescribeJob);
+            this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.CbAddress);
             this.tabPage1.Controls.Add(this.PtbImageLogoCompany);
             this.tabPage1.Controls.Add(this.btnAddImageLogoCompany);
@@ -141,18 +145,124 @@
             this.tabPage1.Location = new System.Drawing.Point(184, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(960, 623);
+            this.tabPage1.Size = new System.Drawing.Size(1004, 623);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Create Jobs";
             this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // tbDescribeJob
+            // 
+            this.tbDescribeJob.BorderRadius = 20;
+            this.tbDescribeJob.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbDescribeJob.DefaultText = "";
+            this.tbDescribeJob.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbDescribeJob.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbDescribeJob.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbDescribeJob.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbDescribeJob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbDescribeJob.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbDescribeJob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.tbDescribeJob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbDescribeJob.Location = new System.Drawing.Point(199, 497);
+            this.tbDescribeJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbDescribeJob.Name = "tbDescribeJob";
+            this.tbDescribeJob.PasswordChar = '\0';
+            this.tbDescribeJob.PlaceholderText = "";
+            this.tbDescribeJob.SelectedText = "";
+            this.tbDescribeJob.Size = new System.Drawing.Size(395, 49);
+            this.tbDescribeJob.TabIndex = 80;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(60, 511);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 16);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "Describe Job :";
+            // 
+            // CbAddress
+            // 
+            this.CbAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.CbAddress.FormattingEnabled = true;
+            this.CbAddress.Items.AddRange(new object[] {
+            "An Giang",
+            "Bà Rịa - Vũng Tàu",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước",
+            "Bình Thuận",
+            "Cà Mau ",
+            "Cao Bằng",
+            "Cần Thơ",
+            "Đà Nẵng",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Điện Biên",
+            "Đồng Nai",
+            "Đồng Tháp",
+            "Gia Lai",
+            "Hà Giang",
+            "Hà Nam",
+            "Hà Nội",
+            "Hà Tĩnh",
+            "Hải Dương",
+            "Hải Phòng",
+            "Hậu Giang",
+            "Hòa Bình",
+            "Hồ Chí Minh",
+            "Hưng Yên",
+            "Khánh Hòa",
+            "Kiên Giang",
+            "Kon Tum",
+            "Lai Châu",
+            "Lâm Đồng",
+            "Lạng Sơn",
+            "Lào Cai",
+            "Long An",
+            "Nam Định",
+            "Nghệ An",
+            "Ninh Bình",
+            "Ninh Thuận",
+            "Phú Thọ",
+            "Phú Yên",
+            "Quảng Bình",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Ninh",
+            "Quảng Trị",
+            "Sóc Trăng",
+            "Sơn La",
+            "Tây Ninh",
+            "Thái Bình",
+            "Thái Nguyên",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Tiền Giang",
+            "TP Hồ Chí Minh",
+            "Trà Vinh",
+            "Tuyên Quang",
+            "Vĩnh Long",
+            "Vĩnh Phúc"});
+            this.CbAddress.Location = new System.Drawing.Point(199, 444);
+            this.CbAddress.Name = "CbAddress";
+            this.CbAddress.Size = new System.Drawing.Size(395, 24);
+            this.CbAddress.TabIndex = 78;
+            this.CbAddress.SelectedIndexChanged += new System.EventHandler(this.CbAddress_SelectedIndexChanged);
             // 
             // PtbImageLogoCompany
             // 
             this.PtbImageLogoCompany.ImageRotate = 0F;
-            this.PtbImageLogoCompany.Location = new System.Drawing.Point(669, 122);
+            this.PtbImageLogoCompany.Location = new System.Drawing.Point(700, 111);
             this.PtbImageLogoCompany.Name = "PtbImageLogoCompany";
             this.PtbImageLogoCompany.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PtbImageLogoCompany.Size = new System.Drawing.Size(257, 257);
+            this.PtbImageLogoCompany.Size = new System.Drawing.Size(221, 221);
             this.PtbImageLogoCompany.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PtbImageLogoCompany.TabIndex = 77;
             this.PtbImageLogoCompany.TabStop = false;
@@ -168,7 +278,7 @@
             this.btnAddImageLogoCompany.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.btnAddImageLogoCompany.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddImageLogoCompany.ForeColor = System.Drawing.Color.White;
-            this.btnAddImageLogoCompany.Location = new System.Drawing.Point(706, 412);
+            this.btnAddImageLogoCompany.Location = new System.Drawing.Point(728, 361);
             this.btnAddImageLogoCompany.Name = "btnAddImageLogoCompany";
             this.btnAddImageLogoCompany.Size = new System.Drawing.Size(169, 52);
             this.btnAddImageLogoCompany.TabIndex = 76;
@@ -182,7 +292,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel1.Location = new System.Drawing.Point(3, 553);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(954, 67);
+            this.guna2Panel1.Size = new System.Drawing.Size(998, 67);
             this.guna2Panel1.TabIndex = 74;
             // 
             // guna2PictureBox1
@@ -224,14 +334,15 @@
             this.tbContact.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbContact.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbContact.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tbContact.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbContact.Location = new System.Drawing.Point(212, 366);
+            this.tbContact.Location = new System.Drawing.Point(199, 361);
             this.tbContact.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbContact.Name = "tbContact";
             this.tbContact.PasswordChar = '\0';
             this.tbContact.PlaceholderText = "";
             this.tbContact.SelectedText = "";
-            this.tbContact.Size = new System.Drawing.Size(395, 39);
+            this.tbContact.Size = new System.Drawing.Size(395, 49);
             this.tbContact.TabIndex = 72;
             // 
             // tbRecruit
@@ -348,14 +459,15 @@
             this.tbRecruit.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbRecruit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbRecruit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbRecruit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tbRecruit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbRecruit.Location = new System.Drawing.Point(212, 293);
+            this.tbRecruit.Location = new System.Drawing.Point(199, 288);
             this.tbRecruit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbRecruit.Name = "tbRecruit";
             this.tbRecruit.PasswordChar = '\0';
             this.tbRecruit.PlaceholderText = "";
             this.tbRecruit.SelectedText = "";
-            this.tbRecruit.Size = new System.Drawing.Size(395, 39);
+            this.tbRecruit.Size = new System.Drawing.Size(395, 49);
             this.tbRecruit.TabIndex = 71;
             // 
             // tbPositionNeeded
@@ -563,14 +675,15 @@
             this.tbPositionNeeded.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbPositionNeeded.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPositionNeeded.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbPositionNeeded.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tbPositionNeeded.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbPositionNeeded.Location = new System.Drawing.Point(212, 102);
+            this.tbPositionNeeded.Location = new System.Drawing.Point(199, 97);
             this.tbPositionNeeded.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbPositionNeeded.Name = "tbPositionNeeded";
             this.tbPositionNeeded.PasswordChar = '\0';
             this.tbPositionNeeded.PlaceholderText = "";
             this.tbPositionNeeded.SelectedText = "";
-            this.tbPositionNeeded.Size = new System.Drawing.Size(395, 39);
+            this.tbPositionNeeded.Size = new System.Drawing.Size(395, 49);
             this.tbPositionNeeded.TabIndex = 70;
             // 
             // tbNameJob
@@ -777,14 +890,15 @@
             this.tbNameJob.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbNameJob.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbNameJob.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbNameJob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tbNameJob.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNameJob.Location = new System.Drawing.Point(212, 166);
+            this.tbNameJob.Location = new System.Drawing.Point(199, 161);
             this.tbNameJob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbNameJob.Name = "tbNameJob";
             this.tbNameJob.PasswordChar = '\0';
             this.tbNameJob.PlaceholderText = "";
             this.tbNameJob.SelectedText = "";
-            this.tbNameJob.Size = new System.Drawing.Size(395, 39);
+            this.tbNameJob.Size = new System.Drawing.Size(395, 49);
             this.tbNameJob.TabIndex = 69;
             // 
             // tbSlary
@@ -851,15 +965,17 @@
             this.tbSlary.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbSlary.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbSlary.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbSlary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tbSlary.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbSlary.Location = new System.Drawing.Point(212, 228);
+            this.tbSlary.Location = new System.Drawing.Point(199, 224);
             this.tbSlary.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbSlary.Name = "tbSlary";
             this.tbSlary.PasswordChar = '\0';
             this.tbSlary.PlaceholderText = "";
             this.tbSlary.SelectedText = "";
-            this.tbSlary.Size = new System.Drawing.Size(395, 39);
+            this.tbSlary.Size = new System.Drawing.Size(395, 49);
             this.tbSlary.TabIndex = 68;
+            this.tbSlary.TextChanged += new System.EventHandler(this.tbSlary_TextChanged);
             // 
             // tbCompany
             // 
@@ -921,14 +1037,15 @@
             this.tbCompany.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.tbCompany.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbCompany.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbCompany.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.tbCompany.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCompany.Location = new System.Drawing.Point(212, 30);
+            this.tbCompany.Location = new System.Drawing.Point(199, 19);
             this.tbCompany.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCompany.Name = "tbCompany";
             this.tbCompany.PasswordChar = '\0';
             this.tbCompany.PlaceholderText = "";
             this.tbCompany.SelectedText = "";
-            this.tbCompany.Size = new System.Drawing.Size(395, 39);
+            this.tbCompany.Size = new System.Drawing.Size(395, 49);
             this.tbCompany.TabIndex = 67;
             this.tbCompany.TextChanged += new System.EventHandler(this.tbCompany_TextChanged);
             // 
@@ -1002,17 +1119,18 @@
             this.tabPage2.Location = new System.Drawing.Point(184, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(960, 623);
+            this.tabPage2.Size = new System.Drawing.Size(1004, 623);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Check CVs";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // flCVs
             // 
+            this.flCVs.AutoScroll = true;
             this.flCVs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flCVs.Location = new System.Drawing.Point(3, 58);
             this.flCVs.Name = "flCVs";
-            this.flCVs.Size = new System.Drawing.Size(954, 562);
+            this.flCVs.Size = new System.Drawing.Size(998, 562);
             this.flCVs.TabIndex = 3;
             this.flCVs.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
@@ -1024,7 +1142,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(954, 55);
+            this.panel2.Size = new System.Drawing.Size(998, 55);
             this.panel2.TabIndex = 2;
             // 
             // guna2TextBox2
@@ -1039,13 +1157,13 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(310, 7);
+            this.guna2TextBox2.Location = new System.Drawing.Point(310, 5);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(288, 37);
+            this.guna2TextBox2.Size = new System.Drawing.Size(288, 44);
             this.guna2TextBox2.TabIndex = 11;
             // 
             // guna2CirclePictureBox2
@@ -1077,7 +1195,7 @@
             this.tabPage3.Location = new System.Drawing.Point(184, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(960, 623);
+            this.tabPage3.Size = new System.Drawing.Size(1004, 623);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Adjust Posted Work ";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1092,8 +1210,41 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel2.Location = new System.Drawing.Point(3, 553);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(954, 67);
+            this.guna2Panel2.Size = new System.Drawing.Size(998, 67);
             this.guna2Panel2.TabIndex = 75;
+            // 
+            // guna2TextBox3
+            // 
+            this.guna2TextBox3.BorderRadius = 20;
+            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox3.DefaultText = "";
+            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox3.Location = new System.Drawing.Point(121, 4);
+            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox3.Name = "guna2TextBox3";
+            this.guna2TextBox3.PasswordChar = '\0';
+            this.guna2TextBox3.PlaceholderText = "";
+            this.guna2TextBox3.SelectedText = "";
+            this.guna2TextBox3.Size = new System.Drawing.Size(288, 51);
+            this.guna2TextBox3.TabIndex = 78;
+            // 
+            // guna2CirclePictureBox3
+            // 
+            this.guna2CirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox3.Image")));
+            this.guna2CirclePictureBox3.ImageRotate = 0F;
+            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(428, 9);
+            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
+            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(46, 45);
+            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox3.TabIndex = 79;
+            this.guna2CirclePictureBox3.TabStop = false;
             // 
             // guna2Button3
             // 
@@ -1105,7 +1256,7 @@
             this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(553, 10);
+            this.guna2Button3.Location = new System.Drawing.Point(520, 10);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.Size = new System.Drawing.Size(180, 45);
             this.guna2Button3.TabIndex = 77;
@@ -1132,7 +1283,7 @@
             this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(759, 10);
+            this.guna2Button2.Location = new System.Drawing.Point(759, 9);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 0;
@@ -1144,7 +1295,7 @@
             this.tabPage4.Location = new System.Drawing.Point(184, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(960, 623);
+            this.tabPage4.Size = new System.Drawing.Size(1004, 623);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Accepted CVs";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -1157,19 +1308,8 @@
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel3.Location = new System.Drawing.Point(3, 553);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(954, 67);
+            this.guna2Panel3.Size = new System.Drawing.Size(998, 67);
             this.guna2Panel3.TabIndex = 76;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(15, 17);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(39, 38);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 76;
-            this.guna2PictureBox4.TabStop = false;
             // 
             // guna2TextBox1
             // 
@@ -1183,13 +1323,13 @@
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(297, 12);
+            this.guna2TextBox1.Location = new System.Drawing.Point(299, 4);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(288, 37);
+            this.guna2TextBox1.Size = new System.Drawing.Size(288, 54);
             this.guna2TextBox1.TabIndex = 77;
             // 
             // guna2CirclePictureBox1
@@ -1204,123 +1344,22 @@
             this.guna2CirclePictureBox1.TabIndex = 78;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // guna2TextBox3
+            // guna2PictureBox4
             // 
-            this.guna2TextBox3.BorderRadius = 20;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(114, 10);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(288, 37);
-            this.guna2TextBox3.TabIndex = 78;
-            // 
-            // guna2CirclePictureBox3
-            // 
-            this.guna2CirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox3.Image")));
-            this.guna2CirclePictureBox3.ImageRotate = 0F;
-            this.guna2CirclePictureBox3.Location = new System.Drawing.Point(428, 9);
-            this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
-            this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(46, 45);
-            this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox3.TabIndex = 79;
-            this.guna2CirclePictureBox3.TabStop = false;
-            // 
-            // CbAddress
-            // 
-            this.CbAddress.BackColor = System.Drawing.Color.Transparent;
-            this.CbAddress.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.CbAddress.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CbAddress.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.CbAddress.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.CbAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.CbAddress.ItemHeight = 30;
-            this.CbAddress.Items.AddRange(new object[] {
-            "An Giang",
-            "Bà Rịa - Vũng Tàu",
-            "Bắc Giang",
-            "Bắc Kạn",
-            "Bạc Liêu",
-            "Bắc Ninh",
-            "Bến Tre",
-            "Bình Định",
-            "Bình Dương",
-            "Bình Phước",
-            "Bình Thuận",
-            "Cà Mau ",
-            "Cao Bằng",
-            "Cần Thơ",
-            "Đà Nẵng",
-            "Đắk Lắk",
-            "Đắk Nông",
-            "Điện Biên",
-            "Đồng Nai",
-            "Đồng Tháp",
-            "Gia Lai",
-            "Hà Giang",
-            "Hà Nam",
-            "Hà Nội",
-            "Hà Tĩnh",
-            "Hải Dương",
-            "Hải Phòng",
-            "Hậu Giang",
-            "Hòa Bình",
-            "Hồ Chí Minh",
-            "Hưng Yên",
-            "Khánh Hòa",
-            "Kiên Giang",
-            "Kon Tum",
-            "Lai Châu",
-            "Lâm Đồng",
-            "Lạng Sơn",
-            "Lào Cai",
-            "Long An",
-            "Nam Định",
-            "Nghệ An",
-            "Ninh Bình",
-            "Ninh Thuận",
-            "Phú Thọ",
-            "Phú Yên",
-            "Quảng Bình",
-            "Quảng Nam",
-            "Quảng Ngãi",
-            "Quảng Ninh",
-            "Quảng Trị",
-            "Sóc Trăng",
-            "Sơn La",
-            "Tây Ninh",
-            "Thái Bình",
-            "Thái Nguyên",
-            "Thanh Hóa",
-            "Thừa Thiên Huế",
-            "Tiền Giang",
-            "TP Hồ Chí Minh",
-            "Trà Vinh",
-            "Tuyên Quang",
-            "Vĩnh Long",
-            "Vĩnh Phúc"});
-            this.CbAddress.Location = new System.Drawing.Point(212, 428);
-            this.CbAddress.Name = "CbAddress";
-            this.CbAddress.Size = new System.Drawing.Size(395, 36);
-            this.CbAddress.TabIndex = 78;
+            this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(15, 17);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(39, 38);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 76;
+            this.guna2PictureBox4.TabStop = false;
             // 
             // CreateJobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 631);
+            this.ClientSize = new System.Drawing.Size(1192, 631);
             this.Controls.Add(this.guna2TabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "CreateJobs";
@@ -1338,12 +1377,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1361,7 +1400,6 @@
         private Guna.UI2.WinForms.Guna2TextBox tbPositionNeeded;
         private Guna.UI2.WinForms.Guna2TextBox tbNameJob;
         private Guna.UI2.WinForms.Guna2TextBox tbSlary;
-        private Guna.UI2.WinForms.Guna2TextBox tbCompany;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -1388,6 +1426,9 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
-        private Guna.UI2.WinForms.Guna2ComboBox CbAddress;
+        private System.Windows.Forms.ComboBox CbAddress;
+        private Guna.UI2.WinForms.Guna2TextBox tbCompany;
+        private Guna.UI2.WinForms.Guna2TextBox tbDescribeJob;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -19,6 +19,7 @@ namespace FinalProject
         private string postingTime;
         private string contact;
         private string numberOfRecruit;
+        private string describeJob;
         //mo ta cong viec, mo ta cong ty, mo ta dai ngo, ....de sau lam
         public Jobs() 
         { }
@@ -32,6 +33,6 @@ namespace FinalProject
         public string Address { get { return address; } set { address = value; } }
         public string PostingTime { get { return postingTime; } set { postingTime = value; } }
         public string NumberOfRecruit { get { return numberOfRecruit; } set { numberOfRecruit = value; } }
-
+        public string DescribeJob { get { return describeJob; } set { describeJob = value; } }
     }
 }

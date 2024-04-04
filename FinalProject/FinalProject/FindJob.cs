@@ -15,36 +15,50 @@ namespace FinalProject
     public partial class FindJob : Form
     {
         public static UCInformationCompanies uc;
+        public static int IDCOMPANY;
+        public static int IDJOB;
         public FindJob()
         {
             InitializeComponent();
-            
-            foreach (Jobs job in ReadSQL.Jobs())
-            {
-                UCInformationCompanies UC = new UCInformationCompanies();
-                UC.lbAddress.Text = job.Address;
-                UC.lbNameCompany.Text = job.CompanyName;
-                UC.lbNameJob.Text = job.NameJob;
-                UC.lbNeedPosition.Text = job.PositionNeeded;
-                UC.lbRecruit.Text = job.NumberOfRecruit;
-                UC.lbContact.Text = job.Contact;
-                UC.lbTime.Text = job.PostingTime;
-                UC.lbSalary.Text = job.Salary;
-                this.Controls.Add(UC);
-               
-                flowLayoutjobs.Controls.Add(UC);
-                UC.Click += (sender, e) =>
-                {
-                    uc = UC;
-                    DescribeJob describeJob = new DescribeJob();
-                    describeJob.ShowDialog();
-                };
-            }
-
+            reset();
             //this.Controls.Add(uCInformationCompanies);
             //flowLayoutjobs.Controls.Add(uCInformationCompanies);
         }
-       
+        public void reset()
+        {
+            flowLayoutjobs.Controls.Clear();
+            foreach (Employers employers in ReadSQL.Company())
+            {
+                foreach (Jobs job in ReadSQL.Jobs())
+                {
+                    if (employers.Id == job.CompanyId)
+                    {
+                        UCInformationCompanies UC = new UCInformationCompanies();
+                        UC.lbAddress.Text = job.Address;
+                        UC.lbNameCompany.Text = job.CompanyName;
+                        UC.lbNameJob.Text = job.NameJob;
+                        UC.lbNeedPosition.Text = job.PositionNeeded;
+                        UC.lbRecruit.Text = job.NumberOfRecruit;
+                        UC.lbContact.Text = job.Contact;
+                        UC.lbTime.Text = job.PostingTime;
+                        UC.lbSalary.Text = job.Salary;
+                        UC.lbDescribeJob.Text = job.DescribeJob;
+                        UC.PtbLogoCompany.Image = ConvertImage.ByteArrayToImage(employers.Picture);
+                        this.Controls.Add(UC);
+
+                        flowLayoutjobs.Controls.Add(UC);
+                        UC.Click += (sender, e) =>
+                        {
+                            IDCOMPANY = job.CompanyId;
+                            IDJOB = job.Id;
+                            uc = UC;
+                            DescribeJob describeJob = new DescribeJob();
+                            describeJob.ShowDialog();
+                        };
+                    }
+                }
+            }
+        }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
@@ -84,7 +98,7 @@ namespace FinalProject
         {
             foreach (Jobs job in ReadSQL.Jobs())
             {
-                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && guna2ComboBox1.Text=="")
+                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && CbAddress.Text=="")
                 {
                     UCInformationCompanies UC1 = new UCInformationCompanies();
                     UC1.lbAddress.Text = job.Address;
@@ -105,7 +119,7 @@ namespace FinalProject
                         describeJob.ShowDialog();
                     };
                 }
-                if (TbFind.Text.ToUpper().Replace(" ", "") == "" && guna2ComboBox1.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
+                if (TbFind.Text.ToUpper().Replace(" ", "") == "" && CbAddress.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
                 {
                     UCInformationCompanies UC1 = new UCInformationCompanies();
                     UC1.lbAddress.Text = job.Address;
@@ -126,7 +140,7 @@ namespace FinalProject
                         describeJob.ShowDialog();
                     };
                 }
-                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && guna2ComboBox1.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
+                if (TbFind.Text.ToUpper().Replace(" ", "") == job.NameJob.ToUpper().Replace(" ", "") && CbAddress.Text.ToUpper().Replace(" ", "") == job.Address.ToUpper().Replace(" ", ""))
                 {
                     UCInformationCompanies UC1 = new UCInformationCompanies();
                     UC1.lbAddress.Text = job.Address;
@@ -154,5 +168,14 @@ namespace FinalProject
             FindJobByNameAndAddress();
         }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PtbReset_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
     }
 }

@@ -71,6 +71,7 @@
     <Compile Include="CheckCVs.Designer.cs">
       <DependentUpon>CheckCVs.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConvertImage.cs" />
     <Compile Include="CreateCV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +84,7 @@
     <Compile Include="ForgotPaword.Designer.cs">
       <DependentUpon>ForgotPaword.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageDefault.cs" />
     <Compile Include="InformationUser.cs">
       <SubType>Form</SubType>
     </Compile>

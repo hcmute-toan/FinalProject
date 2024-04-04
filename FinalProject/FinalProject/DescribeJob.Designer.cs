@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.TbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.TbTime = new Guna.UI2.WinForms.Guna2TextBox();
             this.TbContact = new Guna.UI2.WinForms.Guna2TextBox();
             this.TbRecruit = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,7 +53,6 @@
             this.TbCompany = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.TbDescribe = new Guna.UI2.WinForms.Guna2TextBox();
-            this.TbAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
@@ -145,6 +145,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(180, 45);
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "Continue";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // label7
             // 
@@ -242,6 +243,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(586, 561);
             this.guna2Panel1.TabIndex = 54;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
+            // TbAddress
+            // 
+            this.TbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TbAddress.DefaultText = "";
+            this.TbAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TbAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TbAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TbAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TbAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.TbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TbAddress.Location = new System.Drawing.Point(167, 419);
+            this.TbAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.TbAddress.Name = "TbAddress";
+            this.TbAddress.PasswordChar = '\0';
+            this.TbAddress.PlaceholderText = "";
+            this.TbAddress.SelectedText = "";
+            this.TbAddress.Size = new System.Drawing.Size(395, 44);
+            this.TbAddress.TabIndex = 59;
             // 
             // TbTime
             // 
@@ -390,6 +411,7 @@
             this.TbCompany.SelectedText = "";
             this.TbCompany.Size = new System.Drawing.Size(395, 39);
             this.TbCompany.TabIndex = 51;
+            this.TbCompany.TextChanged += new System.EventHandler(this.TbCompany_TextChanged);
             // 
             // guna2Panel3
             // 
@@ -400,6 +422,7 @@
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(562, 561);
             this.guna2Panel3.TabIndex = 55;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
             // TbDescribe
             // 
@@ -421,26 +444,6 @@
             this.TbDescribe.SelectedText = "";
             this.TbDescribe.Size = new System.Drawing.Size(463, 470);
             this.TbDescribe.TabIndex = 52;
-            // 
-            // TbAddress
-            // 
-            this.TbAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TbAddress.DefaultText = "";
-            this.TbAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TbAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TbAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TbAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TbAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TbAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.TbAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TbAddress.Location = new System.Drawing.Point(167, 419);
-            this.TbAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.TbAddress.Name = "TbAddress";
-            this.TbAddress.PasswordChar = '\0';
-            this.TbAddress.PlaceholderText = "";
-            this.TbAddress.SelectedText = "";
-            this.TbAddress.Size = new System.Drawing.Size(395, 44);
-            this.TbAddress.TabIndex = 59;
             // 
             // DescribeJob
             // 

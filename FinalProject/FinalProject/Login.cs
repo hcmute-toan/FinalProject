@@ -74,6 +74,7 @@ namespace FinalProject
         }
 
         public static int IdCompany;
+        public static int IdUser;
        private void btnLogin_Click(object sender, EventArgs e)
         {
             // Su ly chuoi.          
@@ -99,6 +100,7 @@ namespace FinalProject
             {
                 if(panel1.Visible==true && tbUserName.Text==account.UserName &&  tbPassword.Text==account.Password)
                 {
+                    IdUser = account.Id;
                     this.Hide();
                     FindJob form1 = new FindJob();
                     form1.ShowDialog();

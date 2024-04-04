@@ -148,43 +148,35 @@ namespace FinalProject
                     name = "Employers";
                 }
 
-                SQL = string.Format($"INSERT INTO {name}" + "(Name,Gmail,Password) VALUES ('{0}','{1}','{2}')", tbUserName.Text, tbGmail.Text, tbPassword.Text);
-                try
+                //SQL = string.Format($"INSERT INTO {name}" + "(Name,Gmail,Password) VALUES ('{0}','{1}','{2}')", tbUserName.Text, tbGmail.Text, tbPassword.Text);
+                byte[] b = ImageDefault.ImageToByteArray(ImageDefault.image);
+                conn.Open();
+                SqlCommand cmd = new SqlCommand($"insert into {name} values(@Name, @Gmail,@Password, @Picture)", conn);
+                cmd.Parameters.Add("@Name", tbUserName.Text);
+                cmd.Parameters.Add("@Gmail", tbGmail.Text);
+                cmd.Parameters.Add("@Password", tbPassword.Text);
+                cmd.Parameters.Add("@Picture", b);
+                if (cmd.ExecuteNonQuery() > 0)
                 {
-                    // Ket noi
-                    conn.Open();
-                    SqlCommand cmd = new SqlCommand(SQL, conn);
-                    if (cmd.ExecuteNonQuery() > 0)
-                    { 
-                        //MessageBox.Show("Successful!!!");
-                        DialogResult result = MessageBox.Show("Successful!!!", "Confirm", MessageBoxButtons.OKCancel);
-                        if (result == DialogResult.OK)
-                        {
-                            this.Hide();
-                            Login login = new Login();
-                            login.ShowDialog();
-                        }
-                        else
-                        {
-                            this.Hide();
-                            Login login = new Login();
-                            login.ShowDialog();
-                        }
-                        
+                    //MessageBox.Show("Successful!!!");
+                    DialogResult result = MessageBox.Show("Successful!!!", "Confirm", MessageBoxButtons.OKCancel);
+                    if (result == DialogResult.OK)
+                    {
+                        this.Hide();
+                        Login login = new Login();
+                        login.ShowDialog();
+                    }
+                    else
+                    {
+                        this.Hide();
+                        Login login = new Login();
+                        login.ShowDialog();
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Fail!!!" + ex);
+                    MessageBox.Show("Fail!!!");
                 }
-                finally
-                {
-                    conn.Close();
-                }
-            }
-            else
-            {
-                return;
             }
         }
 
