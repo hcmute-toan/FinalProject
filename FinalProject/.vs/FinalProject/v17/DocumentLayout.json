@@ -43,11 +43,11 @@
       "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\acceptcvs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|d:\\windows programming\\finalproject\\finalproject\\finalproject\\createcv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\createcv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\createcv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|d:\\windows programming\\finalproject\\finalproject\\finalproject\\ucinformationcompanies.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|D:\\Windows Programming\\FinalProject\\FinalProject\\finalproject\\ucinformationcompanies.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C590BE85-D4EE-4503-92A3-E66D8DCE5923}|FinalProject\\FinalProject.csproj|solutionrelative:finalproject\\ucinformationcompanies.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -160,7 +160,7 @@
               "RelativeDocumentMoniker": "FinalProject\\AcceptCV.cs",
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\AcceptCV.cs",
               "RelativeToolTip": "FinalProject\\AcceptCV.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T15:17:31.93Z",
               "EditorCaption": ""
@@ -175,8 +175,7 @@
               "RelativeToolTip": "FinalProject\\CreateJobs.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAQwEQAAAB3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T06:39:29.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T06:39:29.652Z"
             },
             {
               "$type": "Document",
@@ -188,8 +187,7 @@
               "RelativeToolTip": "FinalProject\\FindJob.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAAwCUAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T14:04:39.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T14:04:39.567Z"
             },
             {
               "$type": "Document",
@@ -201,8 +199,7 @@
               "RelativeToolTip": "FinalProject\\DescribeJob.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T14:04:28.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T14:04:28.437Z"
             },
             {
               "$type": "Document",
@@ -213,8 +210,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\UCInformationCompanies.cs [Design]",
               "RelativeToolTip": "FinalProject\\UCInformationCompanies.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T14:08:02.148Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-03T14:08:02.148Z"
             },
             {
               "$type": "Document",
@@ -225,8 +221,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\CreateCV.cs [Design]",
               "RelativeToolTip": "FinalProject\\CreateCV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T01:32:46.845Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-03T01:32:46.845Z"
             },
             {
               "$type": "Document",
@@ -237,8 +232,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\AcceptCVs.cs [Design]",
               "RelativeToolTip": "FinalProject\\AcceptCVs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:46:42.007Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T12:46:42.007Z"
             },
             {
               "$type": "Document",
@@ -250,8 +244,7 @@
               "RelativeToolTip": "FinalProject\\AcceptCVs.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAcwB4AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:47:02.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T12:47:02.901Z"
             },
             {
               "$type": "Document",
@@ -262,8 +255,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\AcceptCV.cs [Design]",
               "RelativeToolTip": "FinalProject\\AcceptCV.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T12:46:43.589Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-04T12:46:43.589Z"
             },
             {
               "$type": "Document",
@@ -275,8 +267,7 @@
               "RelativeToolTip": "FinalProject\\ConvertImage.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T14:02:35.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T14:02:35.139Z"
             },
             {
               "$type": "Document",
@@ -287,8 +278,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\DescribeJob.cs [Design]",
               "RelativeToolTip": "FinalProject\\DescribeJob.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T02:05:31.732Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-03T02:05:31.732Z"
             },
             {
               "$type": "Document",
@@ -300,8 +290,7 @@
               "RelativeToolTip": "FinalProject\\CreateCV.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T13:23:18.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T13:23:18.168Z"
             },
             {
               "$type": "Document",
@@ -313,8 +302,7 @@
               "RelativeToolTip": "FinalProject\\UCInformationCompanies.Designer.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAcwBgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T15:07:06.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T15:07:06.022Z"
             },
             {
               "$type": "Document",
@@ -326,8 +314,7 @@
               "RelativeToolTip": "FinalProject\\ReadSQL.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T14:12:12.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T14:12:12.376Z"
             },
             {
               "$type": "Document",
@@ -339,8 +326,7 @@
               "RelativeToolTip": "FinalProject\\Jobs.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T01:32:17.923Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T01:32:17.923Z"
             },
             {
               "$type": "Document",
@@ -351,8 +337,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\CreateJobs.cs [Design]",
               "RelativeToolTip": "FinalProject\\CreateJobs.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T06:36:43.709Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-03T06:36:43.709Z"
             },
             {
               "$type": "Document",
@@ -387,8 +372,7 @@
               "RelativeToolTip": "FinalProject\\CreateCV.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T01:32:46.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-03T01:32:46.225Z"
             },
             {
               "$type": "Document",
@@ -423,8 +407,7 @@
               "ToolTip": "D:\\Windows Programming\\FinalProject\\FinalProject\\FinalProject\\FindJob.cs [Design]",
               "RelativeToolTip": "FinalProject\\FindJob.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T14:04:37.898Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-03T14:04:37.898Z"
             },
             {
               "$type": "Document",
@@ -495,8 +478,7 @@
               "RelativeToolTip": "FinalProject\\AcceptCVs.Designer.cs",
               "ViewState": "AQIAAFQAAAAAAAAAAAAYwHQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T13:01:32.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T13:01:32.591Z"
             },
             {
               "$type": "Document",
